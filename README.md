@@ -2,6 +2,13 @@
 
 NOTE: This is a C++ version. Original is in python, thus this is a work in progress.
 
+Implementing image correction model proposed in:
+
+"A Revised Underwater Image Formation Model"
+CVPR 2018
+Derya Akkaynak and Tall Treibitz
+University of Haifa
+
 ## To Do:
 
 Overall:
