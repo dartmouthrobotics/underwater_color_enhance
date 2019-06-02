@@ -6,7 +6,7 @@ Implementing image correction model proposed in:
 
 "A Revised Underwater Image Formation Model"
 CVPR 2018
-Derya Akkaynak and Tall Treibitz
+Derya Akkaynak and Tall Treibitz 
 University of Haifa
 
 ## To Do:
