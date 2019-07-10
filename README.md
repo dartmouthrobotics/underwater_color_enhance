@@ -26,8 +26,8 @@ Single Image Application
 New Model Method:
 * Calculate attenuation values:
   * Sample pixels from patches
-* Wideband veiling light:
-  * Need to get average background pixel
+* Wideband veiling light [FUTURE]:
+  * Calculate average background pixel using image processing
   * Calculate using known camera and water properties (EXTRA)
 
 ROS Application
@@ -53,7 +53,7 @@ Clone repository:
 
 ```
 git clone
-cd ..
+cd underwater_color_enhance
 ```
 
 Build:
@@ -63,18 +63,29 @@ chmod +x build.sh
 ./build.sh
 ```
 
+## Configuration
+
+Image:
+* image <path to singular input image>
+
+* distance: <from the camera to the object of interest, in meters>
+* depth: <positive value, in meters>
+* background_sample: [<x-coordinate>, <y-coordinate>, <width of region>, <height of region>]
+
+* method: <0: A Revised Underwater Image Formation Model>
+* is_adaptive: <???>
+* optimize: <???>
+* est_veiling_light: <true: uses background sample to calculate average wideband veiling light | false: TO DO>
+* show_image: <true: shows color corrected image | false: does not show color corrected image>
+
+
+
 ## Run
 
-In the `color_correct` repository:
+In the `underwater_color_enhance` repository:
 
-For one image:
-
-```
-./Options/Image/image_correct <image path>
-```
-
-Example:
+For one image, based on the parameters in `image_config.yaml`:
 
 ```
-./Options/Image/image_correct Images/shipwreck_depth_000606.png
+./Options/Image/image_correct
 ```

@@ -1,0 +1,14 @@
+# Input image to be enhanced
+image: "Images/shipwreck_depth_000606.png"
+
+# Scene properties
+distance: 0.33
+depth: 6.06
+background_sample: [1770, 270, 2, 2]    # x, y, width, height (1 - one point sample)
+
+# Method
+method: 0
+is_adaptive: false
+optimize: false
+est_veiling_light: true
+show_image: true
