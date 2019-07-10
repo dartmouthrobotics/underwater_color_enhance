@@ -24,11 +24,13 @@ Single Image Application
 * write script that creates that YAML file (EXTRA)
 
 New Model Method:
-* Calculate attenuation values:
-  * Sample pixels from patches
 * Wideband veiling light [FUTURE]:
   * Calculate average background pixel using image processing
   * Calculate using known camera and water properties (EXTRA)
+* Add prior:
+  * Save new data
+  * Read old data
+  * Use old data
 
 ROS Application
 * Start it
@@ -65,12 +67,16 @@ chmod +x build.sh
 
 ## Configuration
 
-Image:
+`image_config.yaml`:
 * image <path to singular input image>
 
 * distance: <from the camera to the object of interest, in meters>
 * depth: <positive value, in meters>
 * background_sample: [<x-coordinate>, <y-coordinate>, <width of region>, <height of region>]
+* color_1_sample: [<x-coordinate>, <y-coordinate>, <width of region>, <height of region>]
+* color_2_sample: [<x-coordinate>, <y-coordinate>, <width of region>, <height of region>]
+
+
 
 * method: <0: A Revised Underwater Image Formation Model>
 * is_adaptive: <???>

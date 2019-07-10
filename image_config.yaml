@@ -5,6 +5,8 @@ image: "Images/shipwreck_depth_000606.png"
 distance: 0.33
 depth: 6.06
 background_sample: [1770, 270, 2, 2]    # x, y, width, height (1 - one point sample)
+color_1_sample: [505, 585, 45, 35]  # x, y, width, height (white recommended)
+color_2_sample: [1335, 605, 15, 10] # x, y, width, height (black recommended)
 
 # Method
 method: 0

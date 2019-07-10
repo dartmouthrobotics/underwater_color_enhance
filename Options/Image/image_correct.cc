@@ -29,6 +29,8 @@ int main(int argc, char* argv[])
   bool show_image = config["show_image"].as<bool>();
 
   std::vector<int> background_sample = config["background_sample"].as<std::vector<int>>();
+  std::vector<int> color_1_sample = config["color_1_sample"].as<std::vector<int>>();
+  std::vector<int> color_2_sample = config["color_2_sample"].as<std::vector<int>>();
   // std::cout << background_sample[0] << std::endl;
 
   // cv::Vec3f intensity = img.at<cv::Vec3b>(background_sample[1], background_sample[0]);
@@ -40,6 +42,8 @@ int main(int argc, char* argv[])
   underwater_scene.distance = distance;
   underwater_scene.depth = depth;
   underwater_scene.background_sample = background_sample;
+  underwater_scene.color_1_sample = color_1_sample;
+  underwater_scene.color_2_sample = color_2_sample;
 
   std::clock_t begin = clock();
 
