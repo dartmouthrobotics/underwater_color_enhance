@@ -72,9 +72,9 @@ chmod +x build.sh
 
 * distance: <from the camera to the object of interest, in meters>
 * depth: <positive value, in meters>
-* background_sample: [\<x-coordinate\>, <y-coordinate>, <width of region>, <height of region>]
-* color_1_sample: [<x-coordinate>, <y-coordinate>, <width of region>, <height of region>]
-* color_2_sample: [<x-coordinate>, <y-coordinate>, <width of region>, <height of region>]
+* background_sample: [\<x-coordinate\>, \<y-coordinate\>, \<width of region\>, \<height of region\>]
+* color_1_sample: [\<x-coordinate\>, \<y-coordinate\>, \<width of region\>, \<height of region\>]
+* color_2_sample: [\<x-coordinate\>, \<y-coordinate\>, \<width of region\>, \<height of region\>]
 
 
 
