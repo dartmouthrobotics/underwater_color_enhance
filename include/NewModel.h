@@ -10,7 +10,6 @@ public:
   NewModel(){};
 
   cv::Mat color_correct( cv::Mat& img ) override;
-  // cv::Mat color_correct2( cv::Mat& img );
 
 private:
   int color_1_truth [3] = {242, 243, 243};  // white
@@ -22,6 +21,10 @@ private:
   cv::Scalar calc_wideband_veiling_light();
   void calc_attenuation( cv::Scalar color_1_obs, cv::Scalar color_2_obs, cv::Scalar wideband_veiling_light );
   void est_attenuation();
+
+  void initialize_file();
+  void set_data_to_file();
+  void end_file();
 
 };
 

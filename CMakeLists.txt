@@ -33,6 +33,7 @@ SET(CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS} -pg")
 #LIST(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake_modules)
 
 add_subdirectory(third-party/yaml-cpp)
+add_subdirectory(third-party/ticpp)
 
 
 find_package(Eigen3 REQUIRED)
@@ -53,6 +54,7 @@ include_directories(
   ${PROJECT_SOURCE_DIR}/include
   ${EIGEN3_INCLUDE_DIR}
   ${CMAKE_SOURCE_DIR}/yaml-cpp/include
+  ${CMALE_SOURCE_DIR}/ticpp
 )
 
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/lib)
@@ -68,6 +70,7 @@ add_library(${PROJECT_NAME} SHARED
 target_link_libraries(${PROJECT_NAME}
   ${OpenCV_LIBS}
   yaml-cpp
+  ticpp
 )
 
 # Build examples

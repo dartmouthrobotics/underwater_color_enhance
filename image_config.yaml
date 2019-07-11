@@ -14,3 +14,4 @@ is_adaptive: false
 optimize: false
 est_veiling_light: true
 show_image: true
+save_data: true

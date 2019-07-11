@@ -2,7 +2,7 @@
 
 #include "NewModel.h"
 
-ColorCorrect::ColorCorrect(Scene& new_scene, int new_method, bool is_adaptive, bool est_veiling_light, bool optimize)
+ColorCorrect::ColorCorrect(Scene& new_scene, int new_method, bool is_adaptive, bool est_veiling_light, bool optimize, bool save_data)
 {
   this->underwater_scene = new_scene;
   this->is_adaptive = is_adaptive;
@@ -14,6 +14,7 @@ ColorCorrect::ColorCorrect(Scene& new_scene, int new_method, bool is_adaptive, b
     this->method = new NewModel;
     this->method->prior = false;
     this->method->est_veiling_light = est_veiling_light;
+    this->method->save_data = save_data;
     this->method->scene = this->underwater_scene;
   }
   else

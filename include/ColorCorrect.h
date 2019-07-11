@@ -9,7 +9,7 @@
 class ColorCorrect {
 public:
   ColorCorrect(){};
-  ColorCorrect(Scene& new_scene, int new_method, bool is_adaptive, bool est_veiling_light, bool optimize);
+  ColorCorrect(Scene& new_scene, int new_method, bool is_adaptive, bool est_veiling_light, bool optimize, bool save_data);
 
   cv::Mat enhance(cv::Mat& img);
 

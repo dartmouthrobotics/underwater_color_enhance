@@ -1,0 +1,5 @@
+<?xml version="1.0" ?>
+<Depth val="6.060000">
+    <Backscatter_Attenuation blue="0.031840" green="-0.120810" red="0.420242" />
+    <Direct_Signal_Attenuation blue="0.752499" green="0.620417" red="4.501715" />
+</Depth>

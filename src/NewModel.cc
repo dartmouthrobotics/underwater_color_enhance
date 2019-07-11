@@ -98,6 +98,15 @@ cv::Mat NewModel::color_correct( cv::Mat& img )
 
   std::cout << "Merge image time: " << double(end - begin) / CLOCKS_PER_SEC << std::endl;
 
+
+  if(this->save_data)
+  {
+    initialize_file();
+    set_data_to_file();
+    end_file();
+  }
+
+
   return corrected_img;
 }
 
@@ -146,4 +155,37 @@ void NewModel::est_attenuation()
   this->direct_signal_att[0] = 6.0;
   this->direct_signal_att[1] = 6.0;
   this->direct_signal_att[2] = 6.0;
+}
+
+
+void NewModel::initialize_file()
+{
+  TiXmlDeclaration * decl = new TiXmlDeclaration("1.0", "", "");
+  this->out_doc.LinkEndChild(decl);
+}
+
+
+void NewModel::set_data_to_file()
+{
+  TiXmlElement * data_depth = new TiXmlElement("Depth");
+  this->out_doc.LinkEndChild( data_depth );
+  data_depth->SetDoubleAttribute("val", this->scene.depth);
+
+  TiXmlElement * data_backscatter_att = new TiXmlElement( "Backscatter_Attenuation" );
+  data_depth->LinkEndChild( data_backscatter_att );
+  data_backscatter_att->SetDoubleAttribute("blue", this->backscatter_att[0]);
+  data_backscatter_att->SetDoubleAttribute("green", this->backscatter_att[1]);
+  data_backscatter_att->SetDoubleAttribute("red", this->backscatter_att[2]);
+
+  TiXmlElement * data_direct_signal_att = new TiXmlElement( "Direct_Signal_Attenuation" );
+  data_depth->LinkEndChild( data_direct_signal_att );
+  data_direct_signal_att->SetDoubleAttribute("blue", this->direct_signal_att[0]);
+  data_direct_signal_att->SetDoubleAttribute("green", this->direct_signal_att[1]);
+  data_direct_signal_att->SetDoubleAttribute("red", this->direct_signal_att[2]);
+}
+
+
+void NewModel::end_file()
+{
+  this->out_doc.SaveFile("madeByHand.xml");
 }

@@ -27,6 +27,7 @@ int main(int argc, char* argv[])
   bool est_veiling_light = config["est_veiling_light"].as<bool>();
 
   bool show_image = config["show_image"].as<bool>();
+  bool save_data = config["save_data"].as<bool>();
 
   std::vector<int> background_sample = config["background_sample"].as<std::vector<int>>();
   std::vector<int> color_1_sample = config["color_1_sample"].as<std::vector<int>>();
@@ -47,7 +48,7 @@ int main(int argc, char* argv[])
 
   std::clock_t begin = clock();
 
-  ColorCorrect correction_method(underwater_scene, method, is_adaptive, est_veiling_light, optimize);
+  ColorCorrect correction_method(underwater_scene, method, is_adaptive, est_veiling_light, optimize, save_data);
 
   cv::Mat corrected_frame = correction_method.enhance(img);
 

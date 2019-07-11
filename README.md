@@ -33,7 +33,11 @@ New Model Method:
   * Use old data
 
 ROS Application
-* Start it
+* image_correct file for ROS
+* new yaml file for ROS application
+* implement with and without SLAM
+* add optimization
+* check if is_adaptive is needed
 
 USB Application
 * Start it
