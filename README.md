@@ -68,7 +68,7 @@ chmod +x build.sh
 ## Configuration
 
 `image_config.yaml`:
-* image <path to singular input image>
+* image \<path to singular input image\>
 
 * distance: <from the camera to the object of interest, in meters>
 * depth: <positive value, in meters>
