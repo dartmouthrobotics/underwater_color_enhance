@@ -76,12 +76,15 @@ chmod +x build.sh
 * color_1_sample: [\<x-coordinate\>, \<y-coordinate\>, \<width of region\>, \<height of region\>]
 * color_2_sample: [\<x-coordinate\>, \<y-coordinate\>, \<width of region\>, \<height of region\>]  
 
+
 * method: <0: A Revised Underwater Image Formation Model>
 * is_adaptive: <???> (currently: false)
 * optimize: <???> (currently: false)
 * est_veiling_light: <true: uses background sample to calculate average wideband veiling light | false: TO DO>  
 
+
 * show_image: <true: shows color corrected image | false: does not show color corrected image>  
+
 
 * save_data: <true/false: attenuation values saved to 'output_filename' or not>
 * prior_data: <true/false: attenuation values used from 'input_filename' or not>
