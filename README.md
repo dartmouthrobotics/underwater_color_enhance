@@ -68,23 +68,20 @@ chmod +x build.sh
 ## Configuration
 
 `image_config.yaml`:
-* image \<path to singular input image\>
+* image: \<path to singular input image\>
 
 * distance: <from the camera to the object of interest, in meters>
 * depth: <positive value, in meters>
 * background_sample: [\<x-coordinate\>, \<y-coordinate\>, \<width of region\>, \<height of region\>]
 * color_1_sample: [\<x-coordinate\>, \<y-coordinate\>, \<width of region\>, \<height of region\>]
-* color_2_sample: [\<x-coordinate\>, \<y-coordinate\>, \<width of region\>, \<height of region\>]  
-
+* color_2_sample: [\<x-coordinate\>, \<y-coordinate\>, \<width of region\>, \<height of region\>] <br><br>
 
 * method: <0: A Revised Underwater Image Formation Model>
 * is_adaptive: <???> (currently: false)
 * optimize: <???> (currently: false)
-* est_veiling_light: <true: uses background sample to calculate average wideband veiling light | false: TO DO>  
+* est_veiling_light: <true: uses background sample to calculate average wideband veiling light | false: TO DO> <br><br>
 
-
-* show_image: <true: shows color corrected image | false: does not show color corrected image>  
-
+* show_image: <true: shows color corrected image | false: does not show color corrected image>  <br><br>
 
 * save_data: <true/false: attenuation values saved to 'output_filename' or not>
 * prior_data: <true/false: attenuation values used from 'input_filename' or not>
