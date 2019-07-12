@@ -85,8 +85,8 @@ chmod +x build.sh
 
 * save_data: <true/false: attenuation values saved to 'output_filename' or not>
 * prior_data: <true/false: attenuation values used from 'input_filename' or not>
-* output_filename: <xml file to save attenuation values with its depth measurement>
-* input_filename: <xml file to load attenuation values with its depth measurement>
+* output_filename: \<xml file to save attenuation values with its depth measurement\>
+* input_filename: \<xml file to load attenuation values with its depth measurement\>
 
 ## Run
 
