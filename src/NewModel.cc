@@ -8,27 +8,29 @@
 
 cv::Mat NewModel::color_correct( cv::Mat& img )
 {
+  // CLOCK
   std::clock_t begin = clock();
+
   // split BGR image to a Mat array of each color channel
   cv::Mat bgr[3];
   split(img, bgr);
 
   std::vector<cv::Mat> corrected_bgr(3);
 
+  // CLOCK
   std::clock_t end = clock();
-
   std::cout << "Initialize parameters time: " << double(end - begin) / CLOCKS_PER_SEC << std::endl;
 
   begin = clock();
 
   // Calculate or estimate wideband veiling light
   cv::Scalar wideband_veiling_light;
-
   // FUTURE: average wideband veiling light be calculates using image processing techniques
   if(this->est_veiling_light) // Estimate wideband veiling light as average background value
   {
     cv::Rect region_of_interest(this->scene.background_sample[0], this->scene.background_sample[1], this->scene.background_sample[2], this->scene.background_sample[3]);
     cv::Mat background = img(region_of_interest);
+
     // NOTE: this mean is done independently for each channel
     // Should I take the average pixel color instead?
     wideband_veiling_light = mean(background);
@@ -38,14 +40,17 @@ cv::Mat NewModel::color_correct( cv::Mat& img )
     wideband_veiling_light = calc_wideband_veiling_light();
   }
 
+  // CLOCK
   end = clock();
-
   std::cout << "Calc veiling light time: " << double(end - begin) / CLOCKS_PER_SEC << std::endl;
 
   begin = clock();
 
-  // Must calculate the attenuation values using a color chart
-  if( false == this->prior )
+  if(this->prior_data) // Use prior data to retrieve backscatter and direct signal attenauation values
+  {
+    est_attenuation();
+  }
+  else // Must calculate the attenuation values using a color chart
   {
     // create rectangles of the regions of interest
     cv::Rect patch_1_region(this->scene.color_1_sample[0], this->scene.color_1_sample[1], this->scene.color_1_sample[2], this->scene.color_1_sample[3]);
@@ -61,14 +66,9 @@ cv::Mat NewModel::color_correct( cv::Mat& img )
 
     calc_attenuation(color_1_obs, color_2_obs, wideband_veiling_light);
   }
-  else // Must estimate attenuation values using prior data
-  {
-    // TO DO: implement retrieval of pre calculated attenuation values
-    est_attenuation();
-  }
 
+  // CLOCK
   end = clock();
-
   std::cout << "Calc attenuation time: " << double(end - begin) / CLOCKS_PER_SEC << std::endl;
 
   begin = clock();
@@ -85,8 +85,8 @@ cv::Mat NewModel::color_correct( cv::Mat& img )
   corrected_bgr[1] = ( bgr[1] - ( wideband_veiling_light[1] * green_backscatter_val ) ) / green_direct_signal_val;
   corrected_bgr[2] = ( bgr[2] - ( wideband_veiling_light[2] * red_backscatter_val ) ) / red_direct_signal_val;
 
+  // CLOCK
   end = clock();
-
   std::cout << "Color correct time: " << double(end - begin) / CLOCKS_PER_SEC << std::endl;
 
   begin = clock();
@@ -94,24 +94,24 @@ cv::Mat NewModel::color_correct( cv::Mat& img )
   cv::Mat corrected_img;
   merge(corrected_bgr, corrected_img);
 
+  // CLOCK
   end = clock();
-
   std::cout << "Merge image time: " << double(end - begin) / CLOCKS_PER_SEC << std::endl;
 
 
   if(this->save_data)
   {
-    initialize_file();
+    // Add declaration to the top of the XML file
+    if(!this->file_initialized)
+    {
+      initialize_file();
+    }
     set_data_to_file();
-    end_file();
   }
-
 
   return corrected_img;
 }
 
-
-// TO DO: Move these to another file? Library file?
 
 // FUTURE: implement calculation for wideband veiling light
 cv::Scalar NewModel::calc_wideband_veiling_light()
@@ -147,14 +147,13 @@ void NewModel::calc_attenuation( cv::Scalar color_1_obs, cv::Scalar color_2_obs,
 
 void NewModel::est_attenuation()
 {
-  // TO DO: implement mapping of depth to attenuation values
-  this->backscatter_att[0] = 5.0;
-  this->backscatter_att[1] = 5.0;
-  this->backscatter_att[2] = 5.0;
+  this->backscatter_att[0] = this->att_map[this->scene.depth][0];
+  this->backscatter_att[1] = this->att_map[this->scene.depth][1];
+  this->backscatter_att[2] = this->att_map[this->scene.depth][2];
 
-  this->direct_signal_att[0] = 6.0;
-  this->direct_signal_att[1] = 6.0;
-  this->direct_signal_att[2] = 6.0;
+  this->direct_signal_att[0] = this->att_map[this->scene.depth][3];
+  this->direct_signal_att[1] = this->att_map[this->scene.depth][4];
+  this->direct_signal_att[2] = this->att_map[this->scene.depth][5];
 }
 
 
@@ -162,6 +161,8 @@ void NewModel::initialize_file()
 {
   TiXmlDeclaration * decl = new TiXmlDeclaration("1.0", "", "");
   this->out_doc.LinkEndChild(decl);
+
+  this->file_initialized = true;
 }
 
 
@@ -185,7 +186,46 @@ void NewModel::set_data_to_file()
 }
 
 
-void NewModel::end_file()
+void NewModel::end_file(std::string output_filename)
 {
-  this->out_doc.SaveFile("madeByHand.xml");
+  this->out_doc.SaveFile(output_filename);
+}
+
+
+void NewModel::load_data(std::string input_filename)
+{
+  TiXmlDocument in_doc(input_filename);
+  if(!in_doc.LoadFile()) exit(EXIT_FAILURE);
+
+  double m_depth;
+  double bs_blue, bs_green, bs_red;
+  double ds_blue, ds_green, ds_red;
+
+  TiXmlHandle hDoc(&in_doc);
+  TiXmlHandle hRoot(0);
+
+  TiXmlElement* pDepthNode = hDoc.FirstChild("Depth").Element();
+  for(pDepthNode; pDepthNode; pDepthNode = pDepthNode->NextSiblingElement())
+  {
+    pDepthNode->QueryDoubleAttribute("val", &m_depth);
+
+    hRoot = TiXmlHandle(pDepthNode);
+    TiXmlElement* pAttNode = hRoot.FirstChild("Backscatter_Attenuation").Element();
+    if(pAttNode)
+    {
+      pAttNode->QueryDoubleAttribute("blue", &bs_blue);
+      pAttNode->QueryDoubleAttribute("green", &bs_green);
+      pAttNode->QueryDoubleAttribute("red", &bs_red);
+    }
+
+    pAttNode = hRoot.FirstChild("Direct_Signal_Attenuation").Element();
+    if(pAttNode)
+    {
+      pAttNode->QueryDoubleAttribute("blue", &ds_blue);
+      pAttNode->QueryDoubleAttribute("green", &ds_green);
+      pAttNode->QueryDoubleAttribute("red", &ds_red);
+    }
+
+    this->att_map[m_depth] = {bs_blue, bs_green, bs_red, ds_blue, ds_green, ds_red};
+  }
 }

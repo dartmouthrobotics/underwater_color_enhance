@@ -27,10 +27,6 @@ New Model Method:
 * Wideband veiling light [FUTURE]:
   * Calculate average background pixel using image processing
   * Calculate using known camera and water properties (EXTRA)
-* Add prior:
-  * Save new data
-  * Read old data
-  * Use old data
 
 ROS Application
 * image_correct file for ROS
