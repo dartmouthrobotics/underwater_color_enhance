@@ -1,0 +1,23 @@
+# Input image to be enhanced
+camera_topic: "/camera/image_raw"
+depth_topic: "/mavros/vfr_hud"
+
+# Scene properties
+distance: 0.33
+background_sample: [114, 460, 2, 2]    # x, y, width, height (1 - one point sample)
+color_1_sample: [516, 590, 1, 1]  # x, y, width, height (white recommended)
+color_2_sample: [1278, 639, 1, 1] # x, y, width, height (black recommended)
+
+# Method
+method: 0
+is_adaptive: false
+optimize: false
+est_veiling_light: true
+
+show_image: true
+check_time: true
+
+save_data: false
+prior_data: false
+output_filename: "output.xml"
+input_filename: "output.xml"

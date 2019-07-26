@@ -58,7 +58,24 @@ git clone
 cd underwater_color_enhance
 ```
 
-Build:
+## Third-party Packages
+
+* yaml-cpp
+
+In its CMakeLists.txt, comment out:
+```
+### Extras
+
+if(YAML_CPP_BUILD_TESTS)
+  enable_testing()
+  add_subdirectory(test)
+endif()
+if(YAML_CPP_BUILD_TOOLS)
+  add_subdirectory(util)
+endif()
+```
+
+## Build
 
 ```
 chmod +x build.sh
@@ -92,7 +109,7 @@ chmod +x build.sh
 
 In the `underwater_color_enhance` repository:
 
-For one image, based on the parameters in `image_config.yaml`:
+For one image (no ROS implementation), based on the parameters in `image_config.yaml`:
 
 ```
 ./Options/Image/image_correct

@@ -1,5 +1,5 @@
 # Input image to be enhanced
-image: "Images/shipwreck_depth_000606.png"
+image: "/home/darobot/Research/color_correct/catkin_ws/src/underwater_color_enhance/Images/shipwreck_depth_000606.png"
 
 # Scene properties
 distance: 0.33
@@ -15,8 +15,9 @@ optimize: false
 est_veiling_light: true
 
 show_image: true
+check_time: true
 
 save_data: false
-prior_data: true
-output_filename: "output.xml"
-input_filename: "output.xml"
+prior_data: false
+output_filename: "/home/darobot/Research/color_correct/catkin_ws/src/underwater_color_enhance/output.xml"
+input_filename: "/home/darobot/Research/color_correct/catkin_ws/src/underwater_color_enhance/output.xml"

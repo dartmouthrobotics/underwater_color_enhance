@@ -1,0 +1,3 @@
+<launch>
+ <node pkg="underwater_color_enhance" type="myProgram" name="ros_color_correct" output="screen"/>
+</launch>
