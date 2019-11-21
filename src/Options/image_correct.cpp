@@ -20,80 +20,112 @@
 
 int main(int argc, char* argv[])
 {
-  // TO DO: check if file exists, otherwise send error
+  // Load configuration file
   YAML::Node config = YAML::LoadFile(argv[1]);
 
-  const std::string image_file = config["image"].as<std::string>();
+  // Single image to color enhance
+  const std::string IMAGE_FILE = config["image"].as<std::string>();
 
-  cv::Mat img = cv::imread(image_file);
+  // Scene properties: distance to object of interest in image and depth in water
+  float DISTANCE = config["distance"].as<float>();
+  double DEPTH = config["depth"].as<double>();
 
-  float distance = config["distance"].as<float>();
-  double depth = config["depth"].as<double>();
-  int method = config["method"].as<float>();
-
-  // TO DO: WHAT??
-  bool is_adaptive = config["is_adaptive"].as<bool>();
+  // Color enhancement method
+  int METHOD_ID = config["method_id"].as<float>();
 
   // TO DO: if optimized then we need to provide the current attenuation values
-  bool optimize = config["optimize"].as<bool>();
+  bool OPTIMIZE = config["optimize"].as<bool>();
 
-  bool est_veiling_light = config["est_veiling_light"].as<bool>();
+  // Color patch locations if using color chart
+  std::vector<int> COLOR_1_SAMPLE = config["color_1_sample"].as<std::vector<int>>();
+  std::vector<int> COLOR_2_SAMPLE = config["color_2_sample"].as<std::vector<int>>();
 
-  bool show_image = config["show_image"].as<bool>();
-  bool check_time = config["check_time"].as<bool>();
-  bool save_data = config["save_data"].as<bool>();
-  bool prior_data = config["prior_data"].as<bool>();
-  const std::string output_filename = config["output_filename"].as<std::string>();
-  const std::string input_filename = config["input_filename"].as<std::string>();
+  // Wideband veiling light: estimated (true) or calculated (false)
+  bool EST_VEILING_LIGHT = config["est_veiling_light"].as<bool>();
 
-  std::vector<int> background_sample = config["background_sample"].as<std::vector<int>>();
-  std::vector<int> color_1_sample = config["color_1_sample"].as<std::vector<int>>();
-  std::vector<int> color_2_sample = config["color_2_sample"].as<std::vector<int>>();
+  // TO DO: Instead use image processing to calculate the average background color
+  std::vector<int> BACKGROUND_SAMPLE = config["background_sample"].as<std::vector<int>>();
 
-  std::cout << "LOG: Configuration file loading complete" << std::endl;
+  std::string CAMERA_RESPONSE_FILENAME = config["camera_response_filename"].as<std::string>();
+  std::string JERLOV_WATER_FILENAME = config["jerlov_water_filename"].as<std::string>();
+  std::string WATER_TYPE = config["water_type"].as<std::string>();
 
+  // Other checks
+  bool SHOW_IMAGE = config["show_image"].as<bool>();
+  bool CHECK_TIME = config["check_time"].as<bool>();
+  bool LOG_SCREEN = config["log_screen"].as<bool>();
+  bool SAVE_DATA = config["save_data"].as<bool>();
+  bool PRIOR_DATA = config["prior_data"].as<bool>();
+  const std::string OUTPUT_FILENAME = config["output_filename"].as<std::string>();
+  const std::string INPUT_FILENAME = config["input_filename"].as<std::string>();
+
+  if (LOG_SCREEN)
+  {
+    std::cout << "LOG: Configuration file loading complete" << std::endl;
+  }
+
+  // Image to color enhance
+  cv::Mat image = cv::imread(IMAGE_FILE);
+
+  // Underwater scene
   underwater_color_enhance::Scene underwater_scene;
-  underwater_scene.distance = distance;
-  underwater_scene.depth = depth;
-  underwater_scene.background_sample = background_sample;
-  underwater_scene.color_1_sample = color_1_sample;
-  underwater_scene.color_2_sample = color_2_sample;
+  underwater_scene.DISTANCE = DISTANCE;
+  underwater_scene.COLOR_1_SAMPLE = COLOR_1_SAMPLE;
+  underwater_scene.COLOR_2_SAMPLE = COLOR_2_SAMPLE;
 
-  std::cout << "LOG: Scene set up comlete" << std::endl;
+  if (EST_VEILING_LIGHT)  // Wideband veiling lgiht assumed to be the average background color
+  {
+    underwater_scene.BACKGROUND_SAMPLE = BACKGROUND_SAMPLE;
+  }
+  else  // Wideband veiling light calculated using camera response values and jerlov waters
+  {
+    underwater_scene.load_camera_response_data(CAMERA_RESPONSE_FILENAME);
+    underwater_scene.load_jerlov_water_data(JERLOV_WATER_FILENAME, WATER_TYPE);
+    underwater_scene.set_depth(static_cast<float>(DEPTH));
+  }
 
-  // CLOCK
+  if (LOG_SCREEN)
+  {
+    std::cout << "LOG: Scene set up comlete" << std::endl;
+  }
+
+  // Initialize color correction method
+  underwater_color_enhance::ColorCorrect correction_method(underwater_scene, METHOD_ID,
+    EST_VEILING_LIGHT, OPTIMIZE, SAVE_DATA, CHECK_TIME, LOG_SCREEN, PRIOR_DATA,
+    INPUT_FILENAME, OUTPUT_FILENAME);
+
+  if (LOG_SCREEN)
+  {
+    std::cout << "LOG: Enhancement method initialization complete" << std::endl;
+  }
+
   std::clock_t begin;
   std::clock_t end;
-  if (check_time)
+  if (CHECK_TIME)
   {
     begin = clock();
   }
 
-  underwater_color_enhance::ColorCorrect correction_method(underwater_scene, method,
-    is_adaptive, est_veiling_light, optimize, save_data, check_time, prior_data, input_filename, output_filename);
-  std::cout << "LOG: Enhancement method initialization complete" << std::endl;
+  cv::Mat corrected_frame = correction_method.enhance(image);
 
-  cv::Mat corrected_frame = correction_method.enhance(img);
-
-  // CLOCK
-  if (check_time)
+  if (CHECK_TIME)
   {
     end = clock();
     std::cout << "LOG: Enhancement complete. Total time: " << double(end - begin) / CLOCKS_PER_SEC << std::endl;
   }
-  else
+  else if (LOG_SCREEN)
   {
     std::cout << "LOG: Enhancement complete" << std::endl;
   }
 
-  if (save_data)
+  if (SAVE_DATA)
   {
     correction_method.save_final_data();
   }
 
-  if (show_image)
+  if (SHOW_IMAGE)
   {
-    cv::imshow("Original", img);
+    cv::imshow("Original", image);
     cv::imshow("Corrected", corrected_frame);
     cv::waitKey(0);
   }

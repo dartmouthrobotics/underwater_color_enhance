@@ -1,0 +1,1485 @@
+<?xml version="1.0" ?>
+<Depth val="1.04">
+    <Backscatter_Attenuation blue="17.3651" green="-nan" red="-nan" />
+    <Direct_Signal_Attenuation blue="62.9947" green="-nan" red="-nan" />
+</Depth>
+<Depth val="1.05">
+    <Backscatter_Attenuation blue="9.08683" green="-nan" red="-nan" />
+    <Direct_Signal_Attenuation blue="10.316" green="-nan" red="-nan" />
+</Depth>
+<Depth val="1.05">
+    <Backscatter_Attenuation blue="12.7772" green="12.9965" red="-nan" />
+    <Direct_Signal_Attenuation blue="-nan" green="59.9893" red="-nan" />
+</Depth>
+<Depth val="1.05">
+    <Backscatter_Attenuation blue="14.7419" green="15.2146" red="-nan" />
+    <Direct_Signal_Attenuation blue="-nan" green="-nan" red="-nan" />
+</Depth>
+<Depth val="1.05">
+    <Backscatter_Attenuation blue="15.4979" green="16.1312" red="-nan" />
+    <Direct_Signal_Attenuation blue="-nan" green="-nan" red="-nan" />
+</Depth>
+<Depth val="1.05">
+    <Backscatter_Attenuation blue="-nan" green="-nan" red="-nan" />
+    <Direct_Signal_Attenuation blue="-nan" green="-nan" red="-nan" />
+</Depth>
+<Depth val="1.05">
+    <Backscatter_Attenuation blue="-0.0712288" green="-0.440153" red="-0.255469" />
+    <Direct_Signal_Attenuation blue="3.44965" green="2.9212" red="3.46606" />
+</Depth>
+<Depth val="1.05">
+    <Backscatter_Attenuation blue="-0.0716136" green="-0.443215" red="-0.262276" />
+    <Direct_Signal_Attenuation blue="3.44965" green="2.9212" red="3.46606" />
+</Depth>
+<Depth val="1.05">
+    <Backscatter_Attenuation blue="-0.0545101" green="-0.419255" red="0.033117" />
+    <Direct_Signal_Attenuation blue="3.44965" green="2.9212" red="3.56687" />
+</Depth>
+<Depth val="1.05">
+    <Backscatter_Attenuation blue="-0.0453735" green="-0.408234" red="0.0796278" />
+    <Direct_Signal_Attenuation blue="3.55047" green="3.00567" red="3.67105" />
+</Depth>
+<Depth val="1.05">
+    <Backscatter_Attenuation blue="-0.00253999" green="-0.439999" red="0.033117" />
+    <Direct_Signal_Attenuation blue="3.65464" green="2.96315" red="3.56687" />
+</Depth>
+<Depth val="1.05">
+    <Backscatter_Attenuation blue="-0.0119224" green="-0.449501" red="-0.0125435" />
+    <Direct_Signal_Attenuation blue="3.55047" green="2.87981" red="3.46606" />
+</Depth>
+<Depth val="1.05">
+    <Backscatter_Attenuation blue="-0.0242719" green="-0.442446" red="-0.203497" />
+    <Direct_Signal_Attenuation blue="3.60212" green="2.9212" red="3.56687" />
+</Depth>
+<Depth val="1.04">
+    <Backscatter_Attenuation blue="-0.0848551" green="-0.467196" red="-0.269748" />
+    <Direct_Signal_Attenuation blue="3.35199" green="2.83896" red="3.36839" />
+</Depth>
+<Depth val="1.04">
+    <Backscatter_Attenuation blue="0.00716132" green="-0.404272" red="-0.0192858" />
+    <Direct_Signal_Attenuation blue="3.76242" green="3.13681" red="3.83413" />
+</Depth>
+<Depth val="1.04">
+    <Backscatter_Attenuation blue="-0.00767398" green="-0.42859" red="-0.192024" />
+    <Direct_Signal_Attenuation blue="3.60212" green="2.96315" red="3.41684" />
+</Depth>
+<Depth val="1.04">
+    <Backscatter_Attenuation blue="-0.00725105" green="-0.395928" red="-0.144421" />
+    <Direct_Signal_Attenuation blue="3.60212" green="2.96315" red="3.41685" />
+</Depth>
+<Depth val="1.04">
+    <Backscatter_Attenuation blue="-0.0147434" green="-0.361758" red="-0.137631" />
+    <Direct_Signal_Attenuation blue="3.70807" green="3.09248" red="3.46606" />
+</Depth>
+<Depth val="1.04">
+    <Backscatter_Attenuation blue="-0.0281936" green="-0.389084" red="-0.174142" />
+    <Direct_Signal_Attenuation blue="3.55047" green="2.9212" red="3.36839" />
+</Depth>
+<Depth val="1.04">
+    <Backscatter_Attenuation blue="-0.0198015" green="-0.385202" red="-0.117582" />
+    <Direct_Signal_Attenuation blue="3.65465" green="3.00567" red="3.56687" />
+</Depth>
+<Depth val="1.05">
+    <Backscatter_Attenuation blue="-0.0195053" green="-0.364278" red="-0.116816" />
+    <Direct_Signal_Attenuation blue="3.65465" green="3.00567" red="3.46606" />
+</Depth>
+<Depth val="1.04">
+    <Backscatter_Attenuation blue="-0.000914797" green="-0.353286" red="-0.0816438" />
+    <Direct_Signal_Attenuation blue="3.87404" green="3.09248" red="3.56687" />
+</Depth>
+<Depth val="1.02">
+    <Backscatter_Attenuation blue="-0.0812141" green="-0.576356" red="-0.0820909" />
+    <Direct_Signal_Attenuation blue="3.76241" green="3.18177" red="3.67105" />
+</Depth>
+<Depth val="1.02">
+    <Backscatter_Attenuation blue="-0.0655821" green="-0.383408" red="-0.0923668" />
+    <Direct_Signal_Attenuation blue="3.70806" green="3.18177" red="3.56687" />
+</Depth>
+<Depth val="1.01">
+    <Backscatter_Attenuation blue="-0.0567007" green="-0.378241" red="-0.0473896" />
+    <Direct_Signal_Attenuation blue="3.76242" green="3.18177" red="3.67105" />
+</Depth>
+<Depth val="1">
+    <Backscatter_Attenuation blue="-0.0579132" green="-0.384441" red="-0.0470436" />
+    <Direct_Signal_Attenuation blue="3.76242" green="3.18177" red="3.67105" />
+</Depth>
+<Depth val="0.97">
+    <Backscatter_Attenuation blue="0.00501883" green="-0.38107" red="-0.0395044" />
+    <Direct_Signal_Attenuation blue="3.93138" green="3.22739" red="3.72447" />
+</Depth>
+<Depth val="0.95">
+    <Backscatter_Attenuation blue="0.00512107" green="-0.388109" red="-0.0399988" />
+    <Direct_Signal_Attenuation blue="3.93137" green="3.22739" red="3.72447" />
+</Depth>
+<Depth val="0.95">
+    <Backscatter_Attenuation blue="-0.00119373" green="-0.383812" red="-0.0448352" />
+    <Direct_Signal_Attenuation blue="3.87403" green="3.18177" red="3.67105" />
+</Depth>
+<Depth val="0.93">
+    <Backscatter_Attenuation blue="0.00504625" green="-0.380442" red="-0.039159" />
+    <Direct_Signal_Attenuation blue="3.93137" green="3.22739" red="3.72447" />
+</Depth>
+<Depth val="0.87">
+    <Backscatter_Attenuation blue="-0.0229294" green="-0.443436" red="0.0194783" />
+    <Direct_Signal_Attenuation blue="3.49966" green="2.83896" red="3.46606" />
+</Depth>
+<Depth val="0.83">
+    <Backscatter_Attenuation blue="-0.0155801" green="-0.419557" red="0.0245811" />
+    <Direct_Signal_Attenuation blue="3.55047" green="2.87981" red="3.51606" />
+</Depth>
+<Depth val="0.81">
+    <Backscatter_Attenuation blue="-0.00760077" green="-0.422974" red="-0.101285" />
+    <Direct_Signal_Attenuation blue="3.81773" green="2.96315" red="3.22739" />
+</Depth>
+<Depth val="0.79">
+    <Backscatter_Attenuation blue="-0.0497737" green="-0.398565" red="0.00892082" />
+    <Direct_Signal_Attenuation blue="3.65465" green="3.00567" red="3.56687" />
+</Depth>
+<Depth val="0.77">
+    <Backscatter_Attenuation blue="-0.047908" green="-0.393691" red="-0.144871" />
+    <Direct_Signal_Attenuation blue="3.65465" green="3.04877" red="3.18177" />
+</Depth>
+<Depth val="0.75">
+    <Backscatter_Attenuation blue="-0.113772" green="-0.429322" red="-0.125955" />
+    <Direct_Signal_Attenuation blue="3.49965" green="2.87981" red="3.36839" />
+</Depth>
+<Depth val="0.73">
+    <Backscatter_Attenuation blue="-0.112128" green="-0.425082" red="-0.123765" />
+    <Direct_Signal_Attenuation blue="3.49966" green="2.87981" red="3.36839" />
+</Depth>
+<Depth val="0.71">
+    <Backscatter_Attenuation blue="-0.0995913" green="-0.420455" red="-0.105846" />
+    <Direct_Signal_Attenuation blue="3.44965" green="3.00567" red="3.22739" />
+</Depth>
+<Depth val="0.69">
+    <Backscatter_Attenuation blue="-0.086592" green="-0.427287" red="-0.0922243" />
+    <Direct_Signal_Attenuation blue="3.55047" green="2.96315" red="3.32068" />
+</Depth>
+<Depth val="0.68">
+    <Backscatter_Attenuation blue="-0.00987763" green="-0.434154" red="0.00287389" />
+    <Direct_Signal_Attenuation blue="3.60212" green="2.9212" red="3.51606" />
+</Depth>
+<Depth val="0.64">
+    <Backscatter_Attenuation blue="-0.0990334" green="-0.425825" red="-0.184846" />
+    <Direct_Signal_Attenuation blue="3.44965" green="2.83896" red="2.9212" />
+</Depth>
+<Depth val="0.61">
+    <Backscatter_Attenuation blue="-0.0095549" green="-0.44578" red="-0.0608446" />
+    <Direct_Signal_Attenuation blue="3.60212" green="2.79864" red="3.09248" />
+</Depth>
+<Depth val="0.59">
+    <Backscatter_Attenuation blue="-0.0222552" green="-0.45725" red="-0.0690305" />
+    <Direct_Signal_Attenuation blue="3.49965" green="2.75883" red="3.04877" />
+</Depth>
+<Depth val="0.6">
+    <Backscatter_Attenuation blue="0.0372192" green="-0.448501" red="0.00419563" />
+    <Direct_Signal_Attenuation blue="3.98979" green="3.09248" red="3.51606" />
+</Depth>
+<Depth val="0.61">
+    <Backscatter_Attenuation blue="0.0242227" green="-0.607175" red="-0.231198" />
+    <Direct_Signal_Attenuation blue="3.81773" green="3.22739" red="3.51606" />
+</Depth>
+<Depth val="0.62">
+    <Backscatter_Attenuation blue="0.183002" green="-0.650527" red="-0.0761084" />
+    <Direct_Signal_Attenuation blue="4.29945" green="3.27369" red="3.89044" />
+</Depth>
+<Depth val="0.63">
+    <Backscatter_Attenuation blue="0.222732" green="-0.618242" red="-0.231757" />
+    <Direct_Signal_Attenuation blue="4.23501" green="3.36839" red="3.72447" />
+</Depth>
+<Depth val="0.64">
+    <Backscatter_Attenuation blue="0.280183" green="-0.517802" red="0.171667" />
+    <Direct_Signal_Attenuation blue="4.23501" green="3.3684" red="3.94778" />
+</Depth>
+<Depth val="0.63">
+    <Backscatter_Attenuation blue="0.340585" green="-0.635348" red="0.217079" />
+    <Direct_Signal_Attenuation blue="4.23501" green="3.36839" red="3.94778" />
+</Depth>
+<Depth val="0.63">
+    <Backscatter_Attenuation blue="0.238362" green="-0.545396" red="0.0288035" />
+    <Direct_Signal_Attenuation blue="4.17188" green="3.32068" red="3.77882" />
+</Depth>
+<Depth val="0.6">
+    <Backscatter_Attenuation blue="0.40471" green="-0.886058" red="0.207052" />
+    <Direct_Signal_Attenuation blue="4.29945" green="3.41685" red="4.00619" />
+</Depth>
+<Depth val="0.53">
+    <Backscatter_Attenuation blue="0.301466" green="-0.962745" red="0.0224548" />
+    <Direct_Signal_Attenuation blue="3.98979" green="3.18177" red="3.72447" />
+</Depth>
+<Depth val="0.51">
+    <Backscatter_Attenuation blue="0.0718246" green="-0.495248" red="-0.0294456" />
+    <Direct_Signal_Attenuation blue="3.93138" green="3.27369" red="3.77882" />
+</Depth>
+<Depth val="0.47">
+    <Backscatter_Attenuation blue="0.0427529" green="-1.0734" red="-0.252967" />
+    <Direct_Signal_Attenuation blue="3.65465" green="2.9212" red="3.41684" />
+</Depth>
+<Depth val="0.45">
+    <Backscatter_Attenuation blue="0.0799616" green="-0.641294" red="-0.333722" />
+    <Direct_Signal_Attenuation blue="3.55047" green="2.83896" red="3.00567" />
+</Depth>
+<Depth val="0.42">
+    <Backscatter_Attenuation blue="-0.0164459" green="-0.581998" red="-0.239142" />
+    <Direct_Signal_Attenuation blue="3.40044" green="2.83896" red="3.27369" />
+</Depth>
+<Depth val="0.41">
+    <Backscatter_Attenuation blue="-0.0155345" green="-0.631969" red="0.0381208" />
+    <Direct_Signal_Attenuation blue="3.40044" green="2.75883" red="3.41684" />
+</Depth>
+<Depth val="0.39">
+    <Backscatter_Attenuation blue="-0.0238612" green="-0.63485" red="-0.0175556" />
+    <Direct_Signal_Attenuation blue="3.35199" green="2.71952" red="3.27369" />
+</Depth>
+<Depth val="0.38">
+    <Backscatter_Attenuation blue="-0.102529" green="-0.590323" red="-0.370211" />
+    <Direct_Signal_Attenuation blue="3.21099" green="2.60448" red="2.87981" />
+</Depth>
+<Depth val="0.36">
+    <Backscatter_Attenuation blue="0.0713833" green="-0.580502" red="-0.326753" />
+    <Direct_Signal_Attenuation blue="3.40044" green="2.60448" red="2.79864" />
+</Depth>
+<Depth val="0.35">
+    <Backscatter_Attenuation blue="0.0704121" green="-0.580502" red="-0.347599" />
+    <Direct_Signal_Attenuation blue="3.40044" green="2.60448" red="2.79864" />
+</Depth>
+<Depth val="0.35">
+    <Backscatter_Attenuation blue="0.0367984" green="-0.500945" red="-0.258931" />
+    <Direct_Signal_Attenuation blue="3.55047" green="2.87981" red="2.96315" />
+</Depth>
+<Depth val="0.34">
+    <Backscatter_Attenuation blue="0.0137239" green="-0.506053" red="-0.189722" />
+    <Direct_Signal_Attenuation blue="3.40044" green="2.83896" red="3.18177" />
+</Depth>
+<Depth val="0.34">
+    <Backscatter_Attenuation blue="0.0437784" green="-0.476613" red="-0.284532" />
+    <Direct_Signal_Attenuation blue="3.60212" green="2.96315" red="2.96315" />
+</Depth>
+<Depth val="0.33">
+    <Backscatter_Attenuation blue="0.147938" green="-0.430291" red="-0.124369" />
+    <Direct_Signal_Attenuation blue="3.87403" green="3.13681" red="3.46606" />
+</Depth>
+<Depth val="0.32">
+    <Backscatter_Attenuation blue="0.12553" green="-0.522296" red="-0.0873307" />
+    <Direct_Signal_Attenuation blue="3.76241" green="2.87981" red="3.41684" />
+</Depth>
+<Depth val="0.29">
+    <Backscatter_Attenuation blue="0.494153" green="-1.01048" red="-0.0701562" />
+    <Direct_Signal_Attenuation blue="3.87403" green="3.04877" red="3.56687" />
+</Depth>
+<Depth val="0.25">
+    <Backscatter_Attenuation blue="0.194295" green="-0.481595" red="0.206191" />
+    <Direct_Signal_Attenuation blue="3.65465" green="3.09248" red="3.67105" />
+</Depth>
+<Depth val="0.23">
+    <Backscatter_Attenuation blue="0.239495" green="-0.473561" red="0.139734" />
+    <Direct_Signal_Attenuation blue="3.76242" green="3.18177" red="3.77882" />
+</Depth>
+<Depth val="0.22">
+    <Backscatter_Attenuation blue="0.556121" green="-1.02891" red="1.14738" />
+    <Direct_Signal_Attenuation blue="3.87403" green="3.09248" red="3.94778" />
+</Depth>
+<Depth val="0.23">
+    <Backscatter_Attenuation blue="0.241806" green="-0.662252" red="0.42883" />
+    <Direct_Signal_Attenuation blue="3.55047" green="3.00567" red="3.77882" />
+</Depth>
+<Depth val="0.25">
+    <Backscatter_Attenuation blue="0.115301" green="-0.572672" red="0.0745595" />
+    <Direct_Signal_Attenuation blue="3.65465" green="3.09248" red="3.67105" />
+</Depth>
+<Depth val="0.25">
+    <Backscatter_Attenuation blue="0.29586" green="-0.621998" red="0.344467" />
+    <Direct_Signal_Attenuation blue="3.70807" green="3.13681" red="3.72447" />
+</Depth>
+<Depth val="0.25">
+    <Backscatter_Attenuation blue="0.363963" green="-0.694399" red="0.689802" />
+    <Direct_Signal_Attenuation blue="3.87403" green="3.22739" red="3.94778" />
+</Depth>
+<Depth val="0.25">
+    <Backscatter_Attenuation blue="0.2937" green="-0.721171" red="0.840274" />
+    <Direct_Signal_Attenuation blue="3.70807" green="3.09248" red="3.77882" />
+</Depth>
+<Depth val="0.26">
+    <Backscatter_Attenuation blue="-0.0237883" green="-0.739881" red="0.0766619" />
+    <Direct_Signal_Attenuation blue="3.40044" green="2.83896" red="3.46606" />
+</Depth>
+<Depth val="0.27">
+    <Backscatter_Attenuation blue="0.0707358" green="-0.384537" red="0.473651" />
+    <Direct_Signal_Attenuation blue="3.55047" green="2.83896" red="3.61853" />
+</Depth>
+<Depth val="0.27">
+    <Backscatter_Attenuation blue="0.0708507" green="-0.780911" red="0.694474" />
+    <Direct_Signal_Attenuation blue="3.35199" green="2.6807" red="3.41684" />
+</Depth>
+<Depth val="0.27">
+    <Backscatter_Attenuation blue="0.262251" green="-0.183709" red="0.27742" />
+    <Direct_Signal_Attenuation blue="3.60212" green="2.79864" red="3.36839" />
+</Depth>
+<Depth val="0.28">
+    <Backscatter_Attenuation blue="0.175473" green="-0.251773" red="0.367429" />
+    <Direct_Signal_Attenuation blue="3.40044" green="2.83896" red="3.46606" />
+</Depth>
+<Depth val="0.28">
+    <Backscatter_Attenuation blue="0.162961" green="-0.210292" red="0.16884" />
+    <Direct_Signal_Attenuation blue="3.44965" green="2.71952" red="3.27369" />
+</Depth>
+<Depth val="0.28">
+    <Backscatter_Attenuation blue="0.088095" green="-0.247272" red="0.187654" />
+    <Direct_Signal_Attenuation blue="3.35199" green="2.83896" red="3.36839" />
+</Depth>
+<Depth val="0.28">
+    <Backscatter_Attenuation blue="0.127723" green="-0.470498" red="0.748785" />
+    <Direct_Signal_Attenuation blue="3.25729" green="2.71952" red="3.41684" />
+</Depth>
+<Depth val="0.28">
+    <Backscatter_Attenuation blue="0.28755" green="-0.0896056" red="0.355942" />
+    <Direct_Signal_Attenuation blue="3.44965" green="2.83896" red="3.36839" />
+</Depth>
+<Depth val="0.29">
+    <Backscatter_Attenuation blue="0.249267" green="-0.165388" red="0.637267" />
+    <Direct_Signal_Attenuation blue="3.40044" green="2.71952" red="3.41684" />
+</Depth>
+<Depth val="0.3">
+    <Backscatter_Attenuation blue="0.121141" green="-0.18609" red="0.370025" />
+    <Direct_Signal_Attenuation blue="3.03237" green="2.56705" red="3.04877" />
+</Depth>
+<Depth val="0.31">
+    <Backscatter_Attenuation blue="0.164806" green="-0.184298" red="0.614269" />
+    <Direct_Signal_Attenuation blue="3.03237" green="2.42168" red="3.09248" />
+</Depth>
+<Depth val="0.33">
+    <Backscatter_Attenuation blue="0.264791" green="-0.0472689" red="0.692969" />
+    <Direct_Signal_Attenuation blue="3.21099" green="2.53007" red="3.18177" />
+</Depth>
+<Depth val="0.35">
+    <Backscatter_Attenuation blue="0.295496" green="-0.224873" red="0.677662" />
+    <Direct_Signal_Attenuation blue="2.9048" green="2.35145" red="2.87981" />
+</Depth>
+<Depth val="0.42">
+    <Backscatter_Attenuation blue="0.213223" green="-0.186334" red="0.483196" />
+    <Direct_Signal_Attenuation blue="3.07608" green="2.42168" red="3.09248" />
+</Depth>
+<Depth val="0.43">
+    <Backscatter_Attenuation blue="0.160786" green="-0.161427" red="0.416631" />
+    <Direct_Signal_Attenuation blue="2.98926" green="2.42168" red="2.9212" />
+</Depth>
+<Depth val="0.45">
+    <Backscatter_Attenuation blue="0.170852" green="-0.16883" red="0.508144" />
+    <Direct_Signal_Attenuation blue="3.07608" green="2.38637" red="3.13681" />
+</Depth>
+<Depth val="0.46">
+    <Backscatter_Attenuation blue="0.180636" green="-0.174686" red="0.523151" />
+    <Direct_Signal_Attenuation blue="3.16537" green="2.35145" red="3.13681" />
+</Depth>
+<Depth val="0.48">
+    <Backscatter_Attenuation blue="0.162456" green="-0.166037" red="0.483991" />
+    <Direct_Signal_Attenuation blue="3.03237" green="2.38637" red="3.04877" />
+</Depth>
+<Depth val="0.51">
+    <Backscatter_Attenuation blue="0.204581" green="-0.114285" red="0.599155" />
+    <Direct_Signal_Attenuation blue="2.9048" green="2.28276" red="3.00567" />
+</Depth>
+<Depth val="0.51">
+    <Backscatter_Attenuation blue="0.304424" green="-0.0628297" red="0.621161" />
+    <Direct_Signal_Attenuation blue="3.21099" green="2.45739" red="3.13681" />
+</Depth>
+<Depth val="0.55">
+    <Backscatter_Attenuation blue="0.555794" green="-0.155479" red="1.27035" />
+    <Direct_Signal_Attenuation blue="3.07608" green="2.31692" red="3.32068" />
+</Depth>
+<Depth val="0.6">
+    <Backscatter_Attenuation blue="0.141729" green="-0.145062" red="0.52305" />
+    <Direct_Signal_Attenuation blue="2.9048" green="2.24898" red="3.13681" />
+</Depth>
+<Depth val="0.61">
+    <Backscatter_Attenuation blue="0.198259" green="-0.0869761" red="0.650685" />
+    <Direct_Signal_Attenuation blue="2.98926" green="2.31692" red="3.22739" />
+</Depth>
+<Depth val="0.62">
+    <Backscatter_Attenuation blue="0.265557" green="-0.0460163" red="0.690834" />
+    <Direct_Signal_Attenuation blue="3.07608" green="2.42168" red="3.22739" />
+</Depth>
+<Depth val="0.63">
+    <Backscatter_Attenuation blue="0.277887" green="0.0246699" red="0.639141" />
+    <Direct_Signal_Attenuation blue="3.03237" green="2.42168" red="3.09248" />
+</Depth>
+<Depth val="0.63">
+    <Backscatter_Attenuation blue="0.193758" green="-0.0809332" red="0.674192" />
+    <Direct_Signal_Attenuation blue="2.94675" green="2.35145" red="3.22739" />
+</Depth>
+<Depth val="0.64">
+    <Backscatter_Attenuation blue="0.12815" green="-0.0877853" red="0.65904" />
+    <Direct_Signal_Attenuation blue="2.82256" green="2.31692" red="3.18177" />
+</Depth>
+<Depth val="0.64">
+    <Backscatter_Attenuation blue="0.223872" green="-0.0404452" red="0.668308" />
+    <Direct_Signal_Attenuation blue="2.9048" green="2.31692" red="3.09248" />
+</Depth>
+<Depth val="0.67">
+    <Backscatter_Attenuation blue="0.281808" green="-0.0113612" red="0.750361" />
+    <Direct_Signal_Attenuation blue="2.98926" green="2.35145" red="3.13681" />
+</Depth>
+<Depth val="0.67">
+    <Backscatter_Attenuation blue="0.252658" green="-0.0114648" red="0.75956" />
+    <Direct_Signal_Attenuation blue="2.94675" green="2.35145" red="3.13681" />
+</Depth>
+<Depth val="0.67">
+    <Backscatter_Attenuation blue="0.25441" green="-0.0175293" red="0.797604" />
+    <Direct_Signal_Attenuation blue="2.94675" green="2.31692" red="3.22739" />
+</Depth>
+<Depth val="0.67">
+    <Backscatter_Attenuation blue="0.248241" green="-0.017593" red="0.743933" />
+    <Direct_Signal_Attenuation blue="2.9048" green="2.31692" red="3.09248" />
+</Depth>
+<Depth val="0.69">
+    <Backscatter_Attenuation blue="0.273721" green="-0.0173722" red="0.723298" />
+    <Direct_Signal_Attenuation blue="2.94675" green="2.31692" red="3.09248" />
+</Depth>
+<Depth val="0.7">
+    <Backscatter_Attenuation blue="0.25835" green="-0.01132" red="0.744352" />
+    <Direct_Signal_Attenuation blue="2.98926" green="2.35145" red="3.13681" />
+</Depth>
+<Depth val="0.7">
+    <Backscatter_Attenuation blue="0.25835" green="0.0112426" red="0.619087" />
+    <Direct_Signal_Attenuation blue="2.98926" green="2.35145" red="3.09248" />
+</Depth>
+<Depth val="0.72">
+    <Backscatter_Attenuation blue="0.231538" green="0.0465838" red="0.5106" />
+    <Direct_Signal_Attenuation blue="2.82256" green="2.42168" red="2.96315" />
+</Depth>
+<Depth val="0.73">
+    <Backscatter_Attenuation blue="0.243601" green="-0.0176252" red="0.734946" />
+    <Direct_Signal_Attenuation blue="2.9048" green="2.31692" red="3.09248" />
+</Depth>
+<Depth val="0.73">
+    <Backscatter_Attenuation blue="0.151423" green="-0.102285" red="0.564211" />
+    <Direct_Signal_Attenuation blue="2.58807" green="2.21556" red="3.04877" />
+</Depth>
+<Depth val="0.73">
+    <Backscatter_Attenuation blue="0.206509" green="-0.117178" red="0.796751" />
+    <Direct_Signal_Attenuation blue="2.70312" green="2.14977" red="2.87981" />
+</Depth>
+<Depth val="0.73">
+    <Backscatter_Attenuation blue="0.195815" green="-0.155734" red="0.34121" />
+    <Direct_Signal_Attenuation blue="2.82256" green="2.05361" red="2.6807" />
+</Depth>
+<Depth val="0.74">
+    <Backscatter_Attenuation blue="0.157369" green="-0.122086" red="0.596152" />
+    <Direct_Signal_Attenuation blue="2.74243" green="2.11738" red="2.96315" />
+</Depth>
+<Depth val="0.74">
+    <Backscatter_Attenuation blue="0.176588" green="-0.103577" red="0.571014" />
+    <Direct_Signal_Attenuation blue="2.86341" green="2.21556" red="3.04877" />
+</Depth>
+<Depth val="0.77">
+    <Backscatter_Attenuation blue="0.216335" green="-0.0581428" red="0.744352" />
+    <Direct_Signal_Attenuation blue="2.86341" green="2.21556" red="3.13681" />
+</Depth>
+<Depth val="0.78">
+    <Backscatter_Attenuation blue="0.179269" green="-0.0579348" red="0.740913" />
+    <Direct_Signal_Attenuation blue="2.62595" green="2.21556" red="3.09248" />
+</Depth>
+<Depth val="0.78">
+    <Backscatter_Attenuation blue="0.214876" green="-0.0461826" red="0.768988" />
+    <Direct_Signal_Attenuation blue="2.86341" green="2.28276" red="3.13681" />
+</Depth>
+<Depth val="0.79">
+    <Backscatter_Attenuation blue="0.225313" green="-0.0461826" red="0.77513" />
+    <Direct_Signal_Attenuation blue="2.94675" green="2.28276" red="3.22739" />
+</Depth>
+<Depth val="0.81">
+    <Backscatter_Attenuation blue="0.239248" green="-0.0305617" red="0.724667" />
+    <Direct_Signal_Attenuation blue="2.82256" green="2.24898" red="3.00567" />
+</Depth>
+<Depth val="0.82">
+    <Backscatter_Attenuation blue="0.180867" green="-0.0241455" red="0.757536" />
+    <Direct_Signal_Attenuation blue="2.74243" green="2.28276" red="2.96315" />
+</Depth>
+<Depth val="0.83">
+    <Backscatter_Attenuation blue="0.273215" green="0.00521566" red="0.896873" />
+    <Direct_Signal_Attenuation blue="2.9048" green="2.31692" red="3.18177" />
+</Depth>
+<Depth val="0.84">
+    <Backscatter_Attenuation blue="0.273215" green="0.0114709" red="0.858694" />
+    <Direct_Signal_Attenuation blue="2.9048" green="2.35145" red="3.04877" />
+</Depth>
+<Depth val="0.84">
+    <Backscatter_Attenuation blue="0.260276" green="-0.0116132" red="0.715814" />
+    <Direct_Signal_Attenuation blue="2.94675" green="2.35145" red="3.00567" />
+</Depth>
+<Depth val="0.83">
+    <Backscatter_Attenuation blue="0.261955" green="-0.0053085" red="0.725434" />
+    <Direct_Signal_Attenuation blue="2.98926" green="2.38637" red="3.04877" />
+</Depth>
+<Depth val="0.83">
+    <Backscatter_Attenuation blue="0.286777" green="-0.0409681" red="0.844118" />
+    <Direct_Signal_Attenuation blue="2.98926" green="2.31692" red="3.18177" />
+</Depth>
+<Depth val="0.82">
+    <Backscatter_Attenuation blue="0.234293" green="-0.0405192" red="0.689982" />
+    <Direct_Signal_Attenuation blue="2.9048" green="2.31692" red="3.09248" />
+</Depth>
+<Depth val="0.81">
+    <Backscatter_Attenuation blue="0.276885" green="-0.0348473" red="0.672596" />
+    <Direct_Signal_Attenuation blue="3.03237" green="2.35145" red="3.13681" />
+</Depth>
+<Depth val="0.8">
+    <Backscatter_Attenuation blue="0.270843" green="-0.00551155" red="0.524347" />
+    <Direct_Signal_Attenuation blue="2.94675" green="2.38637" red="2.9212" />
+</Depth>
+<Depth val="0.78">
+    <Backscatter_Attenuation blue="0.304814" green="0.030683" red="0.547105" />
+    <Direct_Signal_Attenuation blue="3.07608" green="2.45739" red="3.00567" />
+</Depth>
+<Depth val="0.78">
+    <Backscatter_Attenuation blue="0.278314" green="0.0179331" red="0.557885" />
+    <Direct_Signal_Attenuation blue="3.07608" green="2.38637" red="2.96315" />
+</Depth>
+<Depth val="0.76">
+    <Backscatter_Attenuation blue="0.289801" green="0.0243016" red="0.609526" />
+    <Direct_Signal_Attenuation blue="3.1204" green="2.42168" red="3.09248" />
+</Depth>
+<Depth val="0.74">
+    <Backscatter_Attenuation blue="0.247489" green="0.0243926" red="0.543887" />
+    <Direct_Signal_Attenuation blue="2.82256" green="2.42168" red="2.9212" />
+</Depth>
+<Depth val="0.73">
+    <Backscatter_Attenuation blue="0.315289" green="-0.0224445" red="0.963838" />
+    <Direct_Signal_Attenuation blue="2.78224" green="2.31692" red="3.04877" />
+</Depth>
+<Depth val="0.71">
+    <Backscatter_Attenuation blue="0.131518" green="-0.113164" red="0.175182" />
+    <Direct_Signal_Attenuation blue="2.6643" green="2.24898" red="2.71952" />
+</Depth>
+<Depth val="0.63">
+    <Backscatter_Attenuation blue="0.291105" green="-0.0788808" red="0.506174" />
+    <Direct_Signal_Attenuation blue="2.78224" green="2.21556" red="2.87981" />
+</Depth>
+<Depth val="0.6">
+    <Backscatter_Attenuation blue="0.128701" green="-0.177722" red="0.300913" />
+    <Direct_Signal_Attenuation blue="2.62595" green="2.08533" red="2.60448" />
+</Depth>
+<Depth val="0.59">
+    <Backscatter_Attenuation blue="0.266366" green="-0.242344" red="0.268072" />
+    <Direct_Signal_Attenuation blue="2.82256" green="2.08533" red="2.56705" />
+</Depth>
+<Depth val="0.57">
+    <Backscatter_Attenuation blue="0.19265" green="-0.236259" red="0.139451" />
+    <Direct_Signal_Attenuation blue="2.78224" green="2.05361" red="2.53007" />
+</Depth>
+<Depth val="0.56">
+    <Backscatter_Attenuation blue="0.28602" green="-0.191151" red="0.626487" />
+    <Direct_Signal_Attenuation blue="2.9048" green="2.21556" red="2.83896" />
+</Depth>
+<Depth val="0.55">
+    <Backscatter_Attenuation blue="0.135624" green="-0.176836" red="0.278755" />
+    <Direct_Signal_Attenuation blue="2.70312" green="2.14977" red="2.60448" />
+</Depth>
+<Depth val="0.51">
+    <Backscatter_Attenuation blue="0.24904" green="-0.0954194" red="0.457135" />
+    <Direct_Signal_Attenuation blue="2.94675" green="2.31692" red="2.71952" />
+</Depth>
+<Depth val="0.52">
+    <Backscatter_Attenuation blue="0.113007" green="-0.264821" red="-0.0418887" />
+    <Direct_Signal_Attenuation blue="2.78224" green="2.11738" red="2.42168" />
+</Depth>
+<Depth val="0.52">
+    <Backscatter_Attenuation blue="0.128701" green="-0.230963" red="0.022364" />
+    <Direct_Signal_Attenuation blue="2.62595" green="2.05361" red="2.35145" />
+</Depth>
+<Depth val="0.52">
+    <Backscatter_Attenuation blue="0.0694364" green="-0.287899" red="0.0229416" />
+    <Direct_Signal_Attenuation blue="2.55065" green="1.9911" red="2.35145" />
+</Depth>
+<Depth val="0.53">
+    <Backscatter_Attenuation blue="0.0105634" green="-0.316354" red="0.0808953" />
+    <Direct_Signal_Attenuation blue="2.47712" green="1.96031" red="2.38637" />
+</Depth>
+<Depth val="0.54">
+    <Backscatter_Attenuation blue="0.0690542" green="-0.287369" red="0.0222043" />
+    <Direct_Signal_Attenuation blue="2.55065" green="1.9911" red="2.35145" />
+</Depth>
+<Depth val="0.55">
+    <Backscatter_Attenuation blue="0.0707419" green="-0.30983" red="0.109016" />
+    <Direct_Signal_Attenuation blue="2.55065" green="1.9911" red="2.45739" />
+</Depth>
+<Depth val="0.56">
+    <Backscatter_Attenuation blue="-0.00627119" green="-0.383593" red="-0.136986" />
+    <Direct_Signal_Attenuation blue="2.51367" green="1.86973" red="2.28276" />
+</Depth>
+<Depth val="0.57">
+    <Backscatter_Attenuation blue="0.0523498" green="-0.412683" red="-0.0799391" />
+    <Direct_Signal_Attenuation blue="2.58807" green="1.84011" red="2.31692" />
+</Depth>
+<Depth val="0.57">
+    <Backscatter_Attenuation blue="0.00678721" green="-0.383593" red="-0.136986" />
+    <Direct_Signal_Attenuation blue="2.58807" green="1.86973" red="2.28276" />
+</Depth>
+<Depth val="0.58">
+    <Backscatter_Attenuation blue="-0.0790929" green="-0.399392" red="-0.0793671" />
+    <Direct_Signal_Attenuation blue="2.36996" green="1.89963" red="2.31692" />
+</Depth>
+<Depth val="0.59">
+    <Backscatter_Attenuation blue="-0.0790929" green="-0.417028" red="-0.115224" />
+    <Direct_Signal_Attenuation blue="2.36996" green="1.81076" red="2.21556" />
+</Depth>
+<Depth val="0.62">
+    <Backscatter_Attenuation blue="0.0241533" green="-0.374193" red="-0.0358009" />
+    <Direct_Signal_Attenuation blue="2.55065" green="1.89963" red="2.31692" />
+</Depth>
+<Depth val="0.63">
+    <Backscatter_Attenuation blue="-0.0193861" green="-0.404535" red="-0.0951003" />
+    <Direct_Signal_Attenuation blue="2.44099" green="1.86973" red="2.28277" />
+</Depth>
+<Depth val="0.65">
+    <Backscatter_Attenuation blue="0.0385682" green="-0.296313" red="-0.0388386" />
+    <Direct_Signal_Attenuation blue="2.44099" green="1.84011" red="2.24898" />
+</Depth>
+<Depth val="0.67">
+    <Backscatter_Attenuation blue="0.0613122" green="-0.271456" red="-0.00132332" />
+    <Direct_Signal_Attenuation blue="2.47712" green="1.86973" red="2.28277" />
+</Depth>
+<Depth val="0.68">
+    <Backscatter_Attenuation blue="0.0158514" green="-0.301507" red="-0.0662256" />
+    <Direct_Signal_Attenuation blue="2.40527" green="1.81076" red="2.21556" />
+</Depth>
+<Depth val="0.69">
+    <Backscatter_Attenuation blue="0.0374596" green="-0.338451" red="-0.0945752" />
+    <Direct_Signal_Attenuation blue="2.44099" green="1.75289" red="2.18249" />
+</Depth>
+<Depth val="0.69">
+    <Backscatter_Attenuation blue="0.0233276" green="-0.339787" red="-0.0696867" />
+    <Direct_Signal_Attenuation blue="2.33504" green="1.75289" red="2.18249" />
+</Depth>
+<Depth val="0.72">
+    <Backscatter_Attenuation blue="0.065338" green="-0.283164" red="0.127015" />
+    <Direct_Signal_Attenuation blue="2.40527" green="1.84011" red="2.38637" />
+</Depth>
+<Depth val="0.75">
+    <Backscatter_Attenuation blue="0.117213" green="-0.291744" red="0.147999" />
+    <Direct_Signal_Attenuation blue="2.51366" green="1.86973" red="2.42168" />
+</Depth>
+<Depth val="0.76">
+    <Backscatter_Attenuation blue="0.104615" green="-0.299192" red="0.137471" />
+    <Direct_Signal_Attenuation blue="2.44099" green="1.81076" red="2.35145" />
+</Depth>
+<Depth val="0.78">
+    <Backscatter_Attenuation blue="0.175107" green="-0.348011" red="0.282708" />
+    <Direct_Signal_Attenuation blue="2.55065" green="1.89963" red="2.45739" />
+</Depth>
+<Depth val="0.81">
+    <Backscatter_Attenuation blue="0.213092" green="-0.190297" red="0.453386" />
+    <Direct_Signal_Attenuation blue="2.62595" green="2.0222" red="2.53007" />
+</Depth>
+<Depth val="0.82">
+    <Backscatter_Attenuation blue="0.242618" green="-0.16282" red="0.638516" />
+    <Direct_Signal_Attenuation blue="2.6643" green="2.0536" red="2.64236" />
+</Depth>
+<Depth val="0.84">
+    <Backscatter_Attenuation blue="0.126373" green="-0.361669" red="0.274892" />
+    <Direct_Signal_Attenuation blue="2.51366" green="1.84011" red="2.42168" />
+</Depth>
+<Depth val="0.83">
+    <Backscatter_Attenuation blue="0.148932" green="-0.293582" red="0.185199" />
+    <Direct_Signal_Attenuation blue="2.58807" green="1.84011" red="2.42168" />
+</Depth>
+<Depth val="0.8">
+    <Backscatter_Attenuation blue="0.143762" green="-0.266347" red="0.147271" />
+    <Direct_Signal_Attenuation blue="2.58807" green="1.84011" red="2.42168" />
+</Depth>
+<Depth val="0.79">
+    <Backscatter_Attenuation blue="0.117802" green="-0.302599" red="0.149309" />
+    <Direct_Signal_Attenuation blue="2.55065" green="1.78169" red="2.42168" />
+</Depth>
+<Depth val="0.78">
+    <Backscatter_Attenuation blue="0.152148" green="-0.409821" red="0.182624" />
+    <Direct_Signal_Attenuation blue="2.62595" green="1.86973" red="2.45739" />
+</Depth>
+<Depth val="0.73">
+    <Backscatter_Attenuation blue="0.105833" green="-0.446762" red="0.108402" />
+    <Direct_Signal_Attenuation blue="2.51367" green="1.7817" red="2.35145" />
+</Depth>
+<Depth val="0.71">
+    <Backscatter_Attenuation blue="0.138948" green="-0.40666" red="0.171941" />
+    <Direct_Signal_Attenuation blue="2.58807" green="1.84011" red="2.42168" />
+</Depth>
+<Depth val="0.67">
+    <Backscatter_Attenuation blue="0.0892116" green="-0.406784" red="0.247028" />
+    <Direct_Signal_Attenuation blue="2.55065" green="1.86973" red="2.49352" />
+</Depth>
+<Depth val="0.66">
+    <Backscatter_Attenuation blue="0.0901744" green="-0.405282" red="0.187711" />
+    <Direct_Signal_Attenuation blue="2.55065" green="1.86973" red="2.45739" />
+</Depth>
+<Depth val="0.64">
+    <Backscatter_Attenuation blue="0.214316" green="-0.368981" red="0.144183" />
+    <Direct_Signal_Attenuation blue="2.74243" green="1.92983" red="2.45739" />
+</Depth>
+<Depth val="0.63">
+    <Backscatter_Attenuation blue="0.27364" green="-0.286664" red="0.412458" />
+    <Direct_Signal_Attenuation blue="2.82256" green="2.0222" red="2.64236" />
+</Depth>
+<Depth val="0.63">
+    <Backscatter_Attenuation blue="0.351646" green="-0.173835" red="0.397367" />
+    <Direct_Signal_Attenuation blue="2.82256" green="2.14977" red="2.60448" />
+</Depth>
+<Depth val="0.62">
+    <Backscatter_Attenuation blue="0.345775" green="-0.189157" red="0.473638" />
+    <Direct_Signal_Attenuation blue="2.82256" green="2.11738" red="2.71952" />
+</Depth>
+<Depth val="0.61">
+    <Backscatter_Attenuation blue="0.393561" green="-0.220194" red="0.83586" />
+    <Direct_Signal_Attenuation blue="2.70312" green="2.14977" red="2.75883" />
+</Depth>
+<Depth val="0.6">
+    <Backscatter_Attenuation blue="0.279995" green="-0.207723" red="0.380078" />
+    <Direct_Signal_Attenuation blue="2.58807" green="2.08533" red="2.56705" />
+</Depth>
+<Depth val="0.59">
+    <Backscatter_Attenuation blue="0.223887" green="-0.100881" red="0.300419" />
+    <Direct_Signal_Attenuation blue="2.58807" green="2.18249" red="2.60448" />
+</Depth>
+<Depth val="0.57">
+    <Backscatter_Attenuation blue="0.382273" green="-0.161069" red="0.59309" />
+    <Direct_Signal_Attenuation blue="2.62595" green="2.11738" red="2.60448" />
+</Depth>
+<Depth val="0.57">
+    <Backscatter_Attenuation blue="0.260828" green="-0.158384" red="0.32472" />
+    <Direct_Signal_Attenuation blue="2.55065" green="2.08533" red="2.49352" />
+</Depth>
+<Depth val="0.56">
+    <Backscatter_Attenuation blue="0.230568" green="-0.171364" red="0.373269" />
+    <Direct_Signal_Attenuation blue="2.62595" green="2.08533" red="2.6807" />
+</Depth>
+<Depth val="0.55">
+    <Backscatter_Attenuation blue="0.249274" green="-0.184477" red="0.420899" />
+    <Direct_Signal_Attenuation blue="2.62595" green="2.08533" red="2.6807" />
+</Depth>
+<Depth val="0.54">
+    <Backscatter_Attenuation blue="0.30004" green="-0.235711" red="0.535568" />
+    <Direct_Signal_Attenuation blue="2.62595" green="2.0222" red="2.60448" />
+</Depth>
+<Depth val="0.54">
+    <Backscatter_Attenuation blue="0.350566" green="-0.204733" red="0.349849" />
+    <Direct_Signal_Attenuation blue="2.74242" green="1.9911" red="2.45739" />
+</Depth>
+<Depth val="0.52">
+    <Backscatter_Attenuation blue="0.353326" green="-0.206324" red="0.354629" />
+    <Direct_Signal_Attenuation blue="2.74243" green="1.9911" red="2.45739" />
+</Depth>
+<Depth val="0.52">
+    <Backscatter_Attenuation blue="0.358261" green="-0.205128" red="0.339551" />
+    <Direct_Signal_Attenuation blue="2.74243" green="1.9911" red="2.45739" />
+</Depth>
+<Depth val="0.52">
+    <Backscatter_Attenuation blue="0.475695" green="-0.219005" red="0.682483" />
+    <Direct_Signal_Attenuation blue="2.74243" green="2.08533" red="2.53007" />
+</Depth>
+<Depth val="0.51">
+    <Backscatter_Attenuation blue="0.512193" green="-0.235736" red="0.608127" />
+    <Direct_Signal_Attenuation blue="2.74243" green="2.08533" red="2.53007" />
+</Depth>
+<Depth val="0.49">
+    <Backscatter_Attenuation blue="0.334781" green="-0.259697" red="0.522969" />
+    <Direct_Signal_Attenuation blue="2.70312" green="2.0222" red="2.60448" />
+</Depth>
+<Depth val="0.48">
+    <Backscatter_Attenuation blue="0.249784" green="-0.254362" red="0.47785" />
+    <Direct_Signal_Attenuation blue="2.6643" green="1.96031" red="2.56705" />
+</Depth>
+<Depth val="0.47">
+    <Backscatter_Attenuation blue="0.142744" green="-0.327028" red="0.296705" />
+    <Direct_Signal_Attenuation blue="2.47712" green="1.89963" red="2.45739" />
+</Depth>
+<Depth val="0.47">
+    <Backscatter_Attenuation blue="0.15191" green="-0.332321" red="0.29479" />
+    <Direct_Signal_Attenuation blue="2.55065" green="1.86973" red="2.45739" />
+</Depth>
+<Depth val="0.47">
+    <Backscatter_Attenuation blue="0.226425" green="-0.279597" red="0.411211" />
+    <Direct_Signal_Attenuation blue="2.62595" green="1.96031" red="2.49352" />
+</Depth>
+<Depth val="0.47">
+    <Backscatter_Attenuation blue="0.201757" green="-0.261024" red="0.181981" />
+    <Direct_Signal_Attenuation blue="2.58807" green="1.9911" red="2.35145" />
+</Depth>
+<Depth val="0.44">
+    <Backscatter_Attenuation blue="0.331971" green="-0.250571" red="0.586747" />
+    <Direct_Signal_Attenuation blue="2.55065" green="2.08533" red="2.49352" />
+</Depth>
+<Depth val="0.43">
+    <Backscatter_Attenuation blue="0.456716" green="-0.261131" red="0.595521" />
+    <Direct_Signal_Attenuation blue="2.74243" green="1.9911" red="2.49352" />
+</Depth>
+<Depth val="0.42">
+    <Backscatter_Attenuation blue="0.430938" green="-0.25372" red="0.626744" />
+    <Direct_Signal_Attenuation blue="2.78224" green="2.0222" red="2.53007" />
+</Depth>
+<Depth val="0.41">
+    <Backscatter_Attenuation blue="0.399946" green="-0.159347" red="0.670463" />
+    <Direct_Signal_Attenuation blue="2.82256" green="2.11738" red="2.71952" />
+</Depth>
+<Depth val="0.41">
+    <Backscatter_Attenuation blue="0.362097" green="-0.329174" red="0.84883" />
+    <Direct_Signal_Attenuation blue="2.6643" green="1.9911" red="2.56705" />
+</Depth>
+<Depth val="0.41">
+    <Backscatter_Attenuation blue="0.26651" green="-0.224247" red="0.347507" />
+    <Direct_Signal_Attenuation blue="2.6643" green="2.0222" red="2.45739" />
+</Depth>
+<Depth val="0.4">
+    <Backscatter_Attenuation blue="0.158793" green="-0.233178" red="0.351957" />
+    <Direct_Signal_Attenuation blue="2.55065" green="1.9911" red="2.49352" />
+</Depth>
+<Depth val="0.41">
+    <Backscatter_Attenuation blue="0.238766" green="-0.241142" red="0.431797" />
+    <Direct_Signal_Attenuation blue="2.6643" green="1.96031" red="2.56705" />
+</Depth>
+<Depth val="0.4">
+    <Backscatter_Attenuation blue="0.242618" green="-0.245991" red="0.474584" />
+    <Direct_Signal_Attenuation blue="2.6643" green="1.96031" red="2.56705" />
+</Depth>
+<Depth val="0.41">
+    <Backscatter_Attenuation blue="0.31109" green="-0.165616" red="0.618313" />
+    <Direct_Signal_Attenuation blue="2.74243" green="2.0222" red="2.64236" />
+</Depth>
+<Depth val="0.4">
+    <Backscatter_Attenuation blue="0.298187" green="-0.144259" red="0.43994" />
+    <Direct_Signal_Attenuation blue="2.70312" green="2.05361" red="2.49352" />
+</Depth>
+<Depth val="0.41">
+    <Backscatter_Attenuation blue="0.29096" green="-0.183462" red="0.56715" />
+    <Direct_Signal_Attenuation blue="2.62595" green="1.92983" red="2.53007" />
+</Depth>
+<Depth val="0.4">
+    <Backscatter_Attenuation blue="0.29096" green="-0.181802" red="0.580491" />
+    <Direct_Signal_Attenuation blue="2.62595" green="1.92983" red="2.53007" />
+</Depth>
+<Depth val="0.4">
+    <Backscatter_Attenuation blue="0.274592" green="-0.290296" red="0.365066" />
+    <Direct_Signal_Attenuation blue="2.51366" green="1.86973" red="2.35145" />
+</Depth>
+<Depth val="0.4">
+    <Backscatter_Attenuation blue="0.279001" green="-0.296147" red="0.384564" />
+    <Direct_Signal_Attenuation blue="2.51366" green="1.86973" red="2.35145" />
+</Depth>
+<Depth val="0.4">
+    <Backscatter_Attenuation blue="0.301114" green="-0.11824" red="0.531315" />
+    <Direct_Signal_Attenuation blue="2.58807" green="2.0222" red="2.49352" />
+</Depth>
+<Depth val="0.4">
+    <Backscatter_Attenuation blue="0.289025" green="-0.11867" red="0.524217" />
+    <Direct_Signal_Attenuation blue="2.51366" green="2.0222" red="2.49352" />
+</Depth>
+<Depth val="0.4">
+    <Backscatter_Attenuation blue="0.299101" green="-0.148507" red="0.678774" />
+    <Direct_Signal_Attenuation blue="2.51366" green="1.9911" red="2.56705" />
+</Depth>
+<Depth val="0.41">
+    <Backscatter_Attenuation blue="0.374979" green="-0.120199" red="0.530825" />
+    <Direct_Signal_Attenuation blue="2.55065" green="2.0222" red="2.60448" />
+</Depth>
+<Depth val="0.41">
+    <Backscatter_Attenuation blue="0.426117" green="-0.00335431" red="0.691859" />
+    <Direct_Signal_Attenuation blue="2.58807" green="2.14977" red="2.64236" />
+</Depth>
+<Depth val="0.41">
+    <Backscatter_Attenuation blue="0.494981" green="0.0245394" red="0.466082" />
+    <Direct_Signal_Attenuation blue="2.70312" green="2.18249" red="2.6807" />
+</Depth>
+<Depth val="0.41">
+    <Backscatter_Attenuation blue="0.327935" green="0.0152033" red="0.4102" />
+    <Direct_Signal_Attenuation blue="2.58807" green="2.14977" red="2.71952" />
+</Depth>
+<Depth val="0.41">
+    <Backscatter_Attenuation blue="0.567643" green="0.0315083" red="0.816207" />
+    <Direct_Signal_Attenuation blue="2.70312" green="2.18249" red="2.75883" />
+</Depth>
+<Depth val="0.41">
+    <Backscatter_Attenuation blue="0.618708" green="0.10869" red="0.765657" />
+    <Direct_Signal_Attenuation blue="2.70312" green="2.18249" red="2.6807" />
+</Depth>
+<Depth val="0.41">
+    <Backscatter_Attenuation blue="0.315699" green="-0.0142187" red="0.519589" />
+    <Direct_Signal_Attenuation blue="2.58807" green="2.08533" red="2.71952" />
+</Depth>
+<Depth val="0.4">
+    <Backscatter_Attenuation blue="0.341007" green="0.0423405" red="0.437718" />
+    <Direct_Signal_Attenuation blue="2.58807" green="2.14977" red="2.60448" />
+</Depth>
+<Depth val="0.41">
+    <Backscatter_Attenuation blue="0.340455" green="0.100531" red="0.617374" />
+    <Direct_Signal_Attenuation blue="2.6643" green="2.21556" red="2.79864" />
+</Depth>
+<Depth val="0.41">
+    <Backscatter_Attenuation blue="0.220931" green="-0.0168687" red="0.61416" />
+    <Direct_Signal_Attenuation blue="2.51366" green="2.08533" red="2.64236" />
+</Depth>
+<Depth val="0.41">
+    <Backscatter_Attenuation blue="0.259867" green="-0.101715" red="0.545825" />
+    <Direct_Signal_Attenuation blue="2.62595" green="2.08533" red="2.71952" />
+</Depth>
+<Depth val="0.44">
+    <Backscatter_Attenuation blue="0.214941" green="-0.0966018" red="0.301987" />
+    <Direct_Signal_Attenuation blue="2.62595" green="1.9911" red="2.64236" />
+</Depth>
+<Depth val="0.45">
+    <Backscatter_Attenuation blue="0.182326" green="-0.0871648" red="0.288258" />
+    <Direct_Signal_Attenuation blue="2.62595" green="1.9911" red="2.64236" />
+</Depth>
+<Depth val="0.46">
+    <Backscatter_Attenuation blue="0.363748" green="0.0158759" red="0.804578" />
+    <Direct_Signal_Attenuation blue="2.78224" green="2.11738" red="2.75883" />
+</Depth>
+<Depth val="0.49">
+    <Backscatter_Attenuation blue="0.285248" green="0.0132815" red="0.821773" />
+    <Direct_Signal_Attenuation blue="2.78223" green="2.11738" red="2.79864" />
+</Depth>
+<Depth val="0.49">
+    <Backscatter_Attenuation blue="0.164194" green="-0.0932438" red="0.484035" />
+    <Direct_Signal_Attenuation blue="2.55065" green="2.0222" red="2.60448" />
+</Depth>
+<Depth val="0.52">
+    <Backscatter_Attenuation blue="0.16339" green="-0.0921057" red="0.485847" />
+    <Direct_Signal_Attenuation blue="2.55065" green="2.0222" red="2.60448" />
+</Depth>
+<Depth val="0.53">
+    <Backscatter_Attenuation blue="0.163123" green="-0.0919451" red="0.484035" />
+    <Direct_Signal_Attenuation blue="2.55065" green="2.0222" red="2.60448" />
+</Depth>
+<Depth val="0.55">
+    <Backscatter_Attenuation blue="0.184098" green="-0.0645427" red="0.614784" />
+    <Direct_Signal_Attenuation blue="2.55065" green="2.0536" red="2.6807" />
+</Depth>
+<Depth val="0.57">
+    <Backscatter_Attenuation blue="0.21577" green="-0.0310044" red="0.678554" />
+    <Direct_Signal_Attenuation blue="2.62595" green="2.11738" red="2.75883" />
+</Depth>
+<Depth val="0.62">
+    <Backscatter_Attenuation blue="0.175196" green="-0.0248596" red="0.442292" />
+    <Direct_Signal_Attenuation blue="2.51366" green="2.14977" red="2.60448" />
+</Depth>
+<Depth val="0.68">
+    <Backscatter_Attenuation blue="0.219918" green="-0.0210476" red="0.500311" />
+    <Direct_Signal_Attenuation blue="2.51367" green="2.05361" red="2.6807" />
+</Depth>
+<Depth val="0.69">
+    <Backscatter_Attenuation blue="0.231555" green="-0.0489307" red="0.615008" />
+    <Direct_Signal_Attenuation blue="2.58807" green="2.0222" red="2.71952" />
+</Depth>
+<Depth val="0.71">
+    <Backscatter_Attenuation blue="0.220279" green="-0.0488449" red="0.63618" />
+    <Direct_Signal_Attenuation blue="2.51366" green="2.0222" red="2.75883" />
+</Depth>
+<Depth val="0.72">
+    <Backscatter_Attenuation blue="0.208324" green="-0.0210476" red="0.500311" />
+    <Direct_Signal_Attenuation blue="2.44099" green="2.05361" red="2.6807" />
+</Depth>
+<Depth val="0.73">
+    <Backscatter_Attenuation blue="0.166324" green="-0.0765672" red="0.564012" />
+    <Direct_Signal_Attenuation blue="2.44099" green="1.9911" red="2.71952" />
+</Depth>
+<Depth val="0.74">
+    <Backscatter_Attenuation blue="0.141009" green="-0.104325" red="0.504005" />
+    <Direct_Signal_Attenuation blue="2.40527" green="1.96031" red="2.6807" />
+</Depth>
+<Depth val="0.75">
+    <Backscatter_Attenuation blue="0.251776" green="-0.0610715" red="0.893608" />
+    <Direct_Signal_Attenuation blue="2.47712" green="2.0222" red="2.75883" />
+</Depth>
+<Depth val="0.76">
+    <Backscatter_Attenuation blue="0.33696" green="-0.0282316" red="1.15596" />
+    <Direct_Signal_Attenuation blue="2.55065" green="2.0536" red="2.79864" />
+</Depth>
+<Depth val="0.77">
+    <Backscatter_Attenuation blue="0.445971" green="0.129302" red="0.899902" />
+    <Direct_Signal_Attenuation blue="2.62595" green="2.14977" red="2.79864" />
+</Depth>
+<Depth val="0.79">
+    <Backscatter_Attenuation blue="0.221372" green="-0.160467" red="0.746151" />
+    <Direct_Signal_Attenuation blue="2.44099" green="1.96031" red="2.6807" />
+</Depth>
+<Depth val="0.8">
+    <Backscatter_Attenuation blue="0.24348" green="-0.0842649" red="0.785597" />
+    <Direct_Signal_Attenuation blue="2.47711" green="2.0222" red="2.6807" />
+</Depth>
+<Depth val="0.81">
+    <Backscatter_Attenuation blue="0.172491" green="-0.0715517" red="0.377253" />
+    <Direct_Signal_Attenuation blue="2.44099" green="2.0222" red="2.56705" />
+</Depth>
+<Depth val="0.82">
+    <Backscatter_Attenuation blue="0.296103" green="0.0363843" red="0.638597" />
+    <Direct_Signal_Attenuation blue="2.6643" green="2.11738" red="2.75883" />
+</Depth>
+<Depth val="0.83">
+    <Backscatter_Attenuation blue="0.439469" green="0.0955665" red="1.26419" />
+    <Direct_Signal_Attenuation blue="2.58807" green="2.11738" red="3.00567" />
+</Depth>
+<Depth val="0.84">
+    <Backscatter_Attenuation blue="0.28187" green="0.017221" red="0.480128" />
+    <Direct_Signal_Attenuation blue="2.47712" green="2.0222" red="2.64236" />
+</Depth>
+<Depth val="0.85">
+    <Backscatter_Attenuation blue="0.183963" green="-0.048674" red="0.363984" />
+    <Direct_Signal_Attenuation blue="2.44099" green="2.0222" red="2.64236" />
+</Depth>
+<Depth val="0.88">
+    <Backscatter_Attenuation blue="0.415294" green="0.00963447" red="1.1135" />
+    <Direct_Signal_Attenuation blue="2.58807" green="2.08533" red="2.83896" />
+</Depth>
+<Depth val="0.91">
+    <Backscatter_Attenuation blue="0.37347" green="0.00138947" red="1.01172" />
+    <Direct_Signal_Attenuation blue="2.55065" green="2.0536" red="2.79864" />
+</Depth>
+<Depth val="0.93">
+    <Backscatter_Attenuation blue="0.344889" green="0.0368658" red="1.01082" />
+    <Direct_Signal_Attenuation blue="2.62595" green="2.08533" red="2.87981" />
+</Depth>
+<Depth val="0.94">
+    <Backscatter_Attenuation blue="0.26846" green="-0.0209366" red="0.460936" />
+    <Direct_Signal_Attenuation blue="2.47711" green="2.05361" red="2.56705" />
+</Depth>
+<Depth val="0.95">
+    <Backscatter_Attenuation blue="0.364829" green="-0.0650721" red="0.883244" />
+    <Direct_Signal_Attenuation blue="2.55065" green="2.0222" red="2.60448" />
+</Depth>
+<Depth val="0.97">
+    <Backscatter_Attenuation blue="0.406476" green="0.0493145" red="1.11344" />
+    <Direct_Signal_Attenuation blue="2.6643" green="2.05361" red="2.9212" />
+</Depth>
+<Depth val="0.98">
+    <Backscatter_Attenuation blue="0.351661" green="0.0855995" red="0.703883" />
+    <Direct_Signal_Attenuation blue="2.6643" green="2.14977" red="2.79864" />
+</Depth>
+<Depth val="0.99">
+    <Backscatter_Attenuation blue="0.367835" green="0.0976083" red="0.956363" />
+    <Direct_Signal_Attenuation blue="2.74243" green="2.18249" red="2.83896" />
+</Depth>
+<Depth val="1.02">
+    <Backscatter_Attenuation blue="0.340518" green="0.0880978" red="0.86185" />
+    <Direct_Signal_Attenuation blue="2.70312" green="2.14977" red="2.79864" />
+</Depth>
+<Depth val="1.04">
+    <Backscatter_Attenuation blue="0.267311" green="-0.0294249" red="0.773886" />
+    <Direct_Signal_Attenuation blue="2.55065" green="2.0222" red="2.71952" />
+</Depth>
+<Depth val="1.05">
+    <Backscatter_Attenuation blue="0.318156" green="-0.0360805" red="0.997918" />
+    <Direct_Signal_Attenuation blue="2.51367" green="2.0222" red="2.64236" />
+</Depth>
+<Depth val="1.08">
+    <Backscatter_Attenuation blue="0.509254" green="0.0791397" red="1.37528" />
+    <Direct_Signal_Attenuation blue="2.70312" green="2.08533" red="2.75883" />
+</Depth>
+<Depth val="1.12">
+    <Backscatter_Attenuation blue="0.373233" green="-0.00685632" red="1.2299" />
+    <Direct_Signal_Attenuation blue="2.58807" green="2.0222" red="2.71952" />
+</Depth>
+<Depth val="1.14">
+    <Backscatter_Attenuation blue="0.344193" green="-0.027642" red="0.80752" />
+    <Direct_Signal_Attenuation blue="2.55065" green="2.0536" red="2.53007" />
+</Depth>
+<Depth val="1.17">
+    <Backscatter_Attenuation blue="0.257266" green="-0.00421642" red="0.534777" />
+    <Direct_Signal_Attenuation blue="2.58807" green="2.0222" red="2.6807" />
+</Depth>
+<Depth val="1.18">
+    <Backscatter_Attenuation blue="0.2212" green="0.000945622" red="0.5419" />
+    <Direct_Signal_Attenuation blue="2.51367" green="2.05361" red="2.60448" />
+</Depth>
+<Depth val="1.24">
+    <Backscatter_Attenuation blue="0.327761" green="0.0874597" red="0.840503" />
+    <Direct_Signal_Attenuation blue="2.62595" green="2.14977" red="2.71952" />
+</Depth>
+<Depth val="1.25">
+    <Backscatter_Attenuation blue="0.276304" green="0.0364508" red="0.697749" />
+    <Direct_Signal_Attenuation blue="2.55065" green="2.11738" red="2.53007" />
+</Depth>
+<Depth val="1.27">
+    <Backscatter_Attenuation blue="0.276815" green="0.0500295" red="0.713728" />
+    <Direct_Signal_Attenuation blue="2.51366" green="2.18249" red="2.56705" />
+</Depth>
+<Depth val="1.29">
+    <Backscatter_Attenuation blue="0.299098" green="0.0787293" red="0.777616" />
+    <Direct_Signal_Attenuation blue="2.55065" green="2.21556" red="2.60448" />
+</Depth>
+<Depth val="1.3">
+    <Backscatter_Attenuation blue="0.302134" green="0.019987" red="0.953707" />
+    <Direct_Signal_Attenuation blue="2.58807" green="2.14977" red="2.79864" />
+</Depth>
+<Depth val="1.33">
+    <Backscatter_Attenuation blue="0.238316" green="-0.103475" red="0.785825" />
+    <Direct_Signal_Attenuation blue="2.47711" green="2.0222" red="2.64236" />
+</Depth>
+<Depth val="1.35">
+    <Backscatter_Attenuation blue="0.236742" green="-0.193901" red="0.882001" />
+    <Direct_Signal_Attenuation blue="2.51366" green="1.9911" red="2.49352" />
+</Depth>
+<Depth val="1.38">
+    <Backscatter_Attenuation blue="0.237005" green="-0.0602286" red="0.618172" />
+    <Direct_Signal_Attenuation blue="2.58807" green="2.08533" red="2.60448" />
+</Depth>
+<Depth val="1.4">
+    <Backscatter_Attenuation blue="0.323166" green="0.0852621" red="0.804772" />
+    <Direct_Signal_Attenuation blue="2.70312" green="2.24898" red="2.71952" />
+</Depth>
+<Depth val="1.41">
+    <Backscatter_Attenuation blue="0.346637" green="0.11422" red="0.854194" />
+    <Direct_Signal_Attenuation blue="2.74243" green="2.28277" red="2.75883" />
+</Depth>
+<Depth val="1.42">
+    <Backscatter_Attenuation blue="0.492119" green="0.1137" red="1.01324" />
+    <Direct_Signal_Attenuation blue="2.86341" green="2.24898" red="2.75883" />
+</Depth>
+<Depth val="1.44">
+    <Backscatter_Attenuation blue="0.328302" green="0.041659" red="1.01991" />
+    <Direct_Signal_Attenuation blue="2.6643" green="2.14977" red="2.79864" />
+</Depth>
+<Depth val="1.46">
+    <Backscatter_Attenuation blue="0.325064" green="0.0983773" red="0.807037" />
+    <Direct_Signal_Attenuation blue="2.6643" green="2.21556" red="2.6807" />
+</Depth>
+<Depth val="1.47">
+    <Backscatter_Attenuation blue="0.19684" green="-0.00906983" red="0.71047" />
+    <Direct_Signal_Attenuation blue="2.51366" green="2.11738" red="2.64236" />
+</Depth>
+<Depth val="1.49">
+    <Backscatter_Attenuation blue="0.359917" green="0.0760587" red="1.08689" />
+    <Direct_Signal_Attenuation blue="2.74243" green="2.21556" red="2.87981" />
+</Depth>
+<Depth val="1.5">
+    <Backscatter_Attenuation blue="0.353915" green="0.0709269" red="1.08805" />
+    <Direct_Signal_Attenuation blue="2.70312" green="2.18249" red="2.83896" />
+</Depth>
+<Depth val="1.52">
+    <Backscatter_Attenuation blue="0.340293" green="0.0828066" red="0.901793" />
+    <Direct_Signal_Attenuation blue="2.74243" green="2.24898" red="2.75883" />
+</Depth>
+<Depth val="1.53">
+    <Backscatter_Attenuation blue="0.286765" green="0.083407" red="0.941873" />
+    <Direct_Signal_Attenuation blue="2.6643" green="2.24898" red="2.75883" />
+</Depth>
+<Depth val="1.55">
+    <Backscatter_Attenuation blue="0.257952" green="0.0538382" red="0.871172" />
+    <Direct_Signal_Attenuation blue="2.62595" green="2.21556" red="2.71952" />
+</Depth>
+<Depth val="1.56">
+    <Backscatter_Attenuation blue="0.284405" green="0.0826578" red="0.911488" />
+    <Direct_Signal_Attenuation blue="2.6643" green="2.24898" red="2.75883" />
+</Depth>
+<Depth val="1.57">
+    <Backscatter_Attenuation blue="0.317894" green="0.0538382" red="0.846462" />
+    <Direct_Signal_Attenuation blue="2.74243" green="2.21556" red="2.71952" />
+</Depth>
+<Depth val="1.62">
+    <Backscatter_Attenuation blue="0.3035" green="0.0983773" red="1.11401" />
+    <Direct_Signal_Attenuation blue="2.6643" green="2.21556" red="2.79864" />
+</Depth>
+<Depth val="1.64">
+    <Backscatter_Attenuation blue="0.359321" green="0.127583" red="0.909448" />
+    <Direct_Signal_Attenuation blue="2.74243" green="2.24898" red="2.6807" />
+</Depth>
+<Depth val="1.65">
+    <Backscatter_Attenuation blue="0.304497" green="0.0699149" red="0.748055" />
+    <Direct_Signal_Attenuation blue="2.6643" green="2.18249" red="2.60448" />
+</Depth>
+<Depth val="1.66">
+    <Backscatter_Attenuation blue="0.277606" green="0.041217" red="0.706197" />
+    <Direct_Signal_Attenuation blue="2.62595" green="2.14977" red="2.56705" />
+</Depth>
+<Depth val="1.68">
+    <Backscatter_Attenuation blue="0.282232" green="0.0709269" red="1.05502" />
+    <Direct_Signal_Attenuation blue="2.62595" green="2.18249" red="2.75883" />
+</Depth>
+<Depth val="1.68">
+    <Backscatter_Attenuation blue="0.252044" green="0.0365177" red="0.992248" />
+    <Direct_Signal_Attenuation blue="2.55065" green="2.11738" red="2.6807" />
+</Depth>
+<Depth val="1.68">
+    <Backscatter_Attenuation blue="0.437085" green="0.11688" red="1.5063" />
+    <Direct_Signal_Attenuation blue="2.82256" green="2.24898" red="2.9212" />
+</Depth>
+<Depth val="1.69">
+    <Backscatter_Attenuation blue="0.277199" green="0.0648226" red="0.980613" />
+    <Direct_Signal_Attenuation blue="2.58807" green="2.14977" red="2.71952" />
+</Depth>
+<Depth val="1.68">
+    <Backscatter_Attenuation blue="0.277199" green="0.0643563" red="0.863442" />
+    <Direct_Signal_Attenuation blue="2.58807" green="2.14977" red="2.64236" />
+</Depth>
+<Depth val="1.68">
+    <Backscatter_Attenuation blue="0.272141" green="0.0641259" red="0.90839" />
+    <Direct_Signal_Attenuation blue="2.55065" green="2.14977" red="2.64236" />
+</Depth>
+<Depth val="1.69">
+    <Backscatter_Attenuation blue="0.278128" green="0.0930409" red="0.828765" />
+    <Direct_Signal_Attenuation blue="2.58807" green="2.18249" red="2.60448" />
+</Depth>
+<Depth val="1.69">
+    <Backscatter_Attenuation blue="0.254179" green="0.0357951" red="0.844061" />
+    <Direct_Signal_Attenuation blue="2.55065" green="2.11738" red="2.60448" />
+</Depth>
+<Depth val="1.69">
+    <Backscatter_Attenuation blue="0.255477" green="0.0356029" red="0.805419" />
+    <Direct_Signal_Attenuation blue="2.55065" green="2.11738" red="2.60448" />
+</Depth>
+<Depth val="1.68">
+    <Backscatter_Attenuation blue="0.322159" green="0.0131399" red="0.921836" />
+    <Direct_Signal_Attenuation blue="2.74243" green="2.11738" red="2.6807" />
+</Depth>
+<Depth val="1.69">
+    <Backscatter_Attenuation blue="0.345467" green="0.0540315" red="1.00916" />
+    <Direct_Signal_Attenuation blue="2.74243" green="2.21556" red="2.75883" />
+</Depth>
+<Depth val="1.68">
+    <Backscatter_Attenuation blue="0.435342" green="0.110898" red="1.26417" />
+    <Direct_Signal_Attenuation blue="2.9048" green="2.24898" red="2.83896" />
+</Depth>
+<Depth val="1.67">
+    <Backscatter_Attenuation blue="0.321082" green="0.0420349" red="0.859935" />
+    <Direct_Signal_Attenuation blue="2.74243" green="2.14977" red="2.60448" />
+</Depth>
+<Depth val="1.64">
+    <Backscatter_Attenuation blue="0.373598" green="0.0420349" red="1.07229" />
+    <Direct_Signal_Attenuation blue="2.94675" green="2.14977" red="2.71952" />
+</Depth>
+<Depth val="1.62">
+    <Backscatter_Attenuation blue="0.302647" green="0.0131632" red="1.01183" />
+    <Direct_Signal_Attenuation blue="2.58807" green="2.11738" red="2.64236" />
+</Depth>
+<Depth val="1.59">
+    <Backscatter_Attenuation blue="0.0723988" green="-0.166893" red="0.31876" />
+    <Direct_Signal_Attenuation blue="2.33505" green="1.86973" red="2.35145" />
+</Depth>
+<Depth val="1.56">
+    <Backscatter_Attenuation blue="0.191595" green="-0.0572984" red="0.258498" />
+    <Direct_Signal_Attenuation blue="2.58807" green="1.9911" red="2.38637" />
+</Depth>
+<Depth val="1.52">
+    <Backscatter_Attenuation blue="0.152049" green="-0.0803832" red="0.215547" />
+    <Direct_Signal_Attenuation blue="2.44099" green="1.92983" red="2.35145" />
+</Depth>
+<Depth val="1.29">
+    <Backscatter_Attenuation blue="0.0322168" green="-0.418606" red="0.133888" />
+    <Direct_Signal_Attenuation blue="2.86341" green="2.21556" red="2.83896" />
+</Depth>
+<Depth val="1.24">
+    <Backscatter_Attenuation blue="0.0626511" green="-0.321461" red="0.223673" />
+    <Direct_Signal_Attenuation blue="3.35199" green="2.42168" red="3.32068" />
+</Depth>
+<Depth val="1.2">
+    <Backscatter_Attenuation blue="0.0590337" green="-0.350713" red="0.177724" />
+    <Direct_Signal_Attenuation blue="3.16537" green="2.31692" red="3.18177" />
+</Depth>
+<Depth val="1.16">
+    <Backscatter_Attenuation blue="-0.0210236" green="-0.376066" red="0.080638" />
+    <Direct_Signal_Attenuation blue="3.30428" green="2.53007" red="3.32068" />
+</Depth>
+<Depth val="1.12">
+    <Backscatter_Attenuation blue="-0.0282907" green="-0.439878" red="0.101402" />
+    <Direct_Signal_Attenuation blue="3.25729" green="2.60448" red="3.41684" />
+</Depth>
+<Depth val="1.08">
+    <Backscatter_Attenuation blue="-0.0808961" green="-0.419203" red="-0.0200839" />
+    <Direct_Signal_Attenuation blue="3.35199" green="2.71952" red="3.36839" />
+</Depth>
+<Depth val="1.05">
+    <Backscatter_Attenuation blue="-0.0267933" green="-0.441707" red="0.170173" />
+    <Direct_Signal_Attenuation blue="3.44966" green="2.60448" red="3.56687" />
+</Depth>
+<Depth val="1.01">
+    <Backscatter_Attenuation blue="0.00620056" green="-0.443234" red="0.138567" />
+    <Direct_Signal_Attenuation blue="3.55047" green="2.64236" red="3.51606" />
+</Depth>
+<Depth val="0.98">
+    <Backscatter_Attenuation blue="-0.0309077" green="-0.445356" red="0.19045" />
+    <Direct_Signal_Attenuation blue="3.40044" green="2.60448" red="3.46606" />
+</Depth>
+<Depth val="0.95">
+    <Backscatter_Attenuation blue="-0.00499832" green="-0.467775" red="0.0434196" />
+    <Direct_Signal_Attenuation blue="3.44965" green="2.60448" red="3.32068" />
+</Depth>
+<Depth val="0.92">
+    <Backscatter_Attenuation blue="-0.0715164" green="-0.630586" red="0.264014" />
+    <Direct_Signal_Attenuation blue="3.35199" green="2.53007" red="3.46606" />
+</Depth>
+<Depth val="0.89">
+    <Backscatter_Attenuation blue="-0.0657875" green="-0.605437" red="0.0865048" />
+    <Direct_Signal_Attenuation blue="3.40044" green="2.64236" red="3.36839" />
+</Depth>
+<Depth val="0.86">
+    <Backscatter_Attenuation blue="-0.10058" green="-0.659257" red="0.0146971" />
+    <Direct_Signal_Attenuation blue="3.16537" green="2.42168" red="3.18177" />
+</Depth>
+<Depth val="0.84">
+    <Backscatter_Attenuation blue="0.0603631" green="-0.647586" red="0.252903" />
+    <Direct_Signal_Attenuation blue="3.55047" green="2.53007" red="3.46606" />
+</Depth>
+<Depth val="0.82">
+    <Backscatter_Attenuation blue="-0.0349836" green="-0.531718" red="0.240632" />
+    <Direct_Signal_Attenuation blue="3.25729" green="2.71952" red="3.41684" />
+</Depth>
+<Depth val="0.8">
+    <Backscatter_Attenuation blue="-0.00161077" green="-0.506755" red="0.175582" />
+    <Direct_Signal_Attenuation blue="3.30428" green="2.56705" red="3.27369" />
+</Depth>
+<Depth val="0.78">
+    <Backscatter_Attenuation blue="-0.00890787" green="-0.503952" red="0.203865" />
+    <Direct_Signal_Attenuation blue="3.25729" green="2.64236" red="3.32068" />
+</Depth>
+<Depth val="0.76">
+    <Backscatter_Attenuation blue="-0.020323" green="-0.561211" red="0.201127" />
+    <Direct_Signal_Attenuation blue="3.35199" green="2.56705" red="3.36839" />
+</Depth>
+<Depth val="0.75">
+    <Backscatter_Attenuation blue="0.0126616" green="-0.500451" red="0.205125" />
+    <Direct_Signal_Attenuation blue="3.40044" green="2.64236" red="3.36839" />
+</Depth>
+<Depth val="0.72">
+    <Backscatter_Attenuation blue="0.0126882" green="-0.498144" red="0.213617" />
+    <Direct_Signal_Attenuation blue="3.40044" green="2.64236" red="3.36839" />
+</Depth>
+<Depth val="0.7">
+    <Backscatter_Attenuation blue="-0.140052" green="-0.603456" red="0.2683" />
+    <Direct_Signal_Attenuation blue="3.07608" green="2.53007" red="3.32068" />
+</Depth>
+<Depth val="0.68">
+    <Backscatter_Attenuation blue="-0.0421856" green="-0.535461" red="0.0973054" />
+    <Direct_Signal_Attenuation blue="3.21099" green="2.60448" red="3.22739" />
+</Depth>
+<Depth val="0.66">
+    <Backscatter_Attenuation blue="-0.060146" green="-0.597977" red="0.0897841" />
+    <Direct_Signal_Attenuation blue="3.25729" green="2.53007" red="3.22739" />
+</Depth>
+<Depth val="0.64">
+    <Backscatter_Attenuation blue="-0.0273942" green="-0.557646" red="0.283421" />
+    <Direct_Signal_Attenuation blue="3.30428" green="2.71952" red="3.22739" />
+</Depth>
+<Depth val="0.62">
+    <Backscatter_Attenuation blue="-0.0891933" green="-0.662471" red="0.143039" />
+    <Direct_Signal_Attenuation blue="3.25729" green="2.53007" red="3.18177" />
+</Depth>
+<Depth val="0.62">
+    <Backscatter_Attenuation blue="-0.149812" green="-0.63804" red="0.0279161" />
+    <Direct_Signal_Attenuation blue="3.21099" green="2.53007" red="3.22739" />
+</Depth>
+<Depth val="0.61">
+    <Backscatter_Attenuation blue="-0.0303326" green="-0.674759" red="0.0134451" />
+    <Direct_Signal_Attenuation blue="3.30428" green="2.49352" red="3.18177" />
+</Depth>
+<Depth val="0.59">
+    <Backscatter_Attenuation blue="-0.0150982" green="-0.643203" red="-0.00356195" />
+    <Direct_Signal_Attenuation blue="3.40044" green="2.60448" red="3.13681" />
+</Depth>
+<Depth val="0.58">
+    <Backscatter_Attenuation blue="-0.0596823" green="-0.572567" red="0.0635326" />
+    <Direct_Signal_Attenuation blue="3.30428" green="2.6807" red="3.32068" />
+</Depth>
+<Depth val="0.58">
+    <Backscatter_Attenuation blue="-0.060381" green="-0.601578" red="0.061708" />
+    <Direct_Signal_Attenuation blue="3.30428" green="2.6807" red="3.32068" />
+</Depth>
+<Depth val="0.57">
+    <Backscatter_Attenuation blue="-0.0684638" green="-0.670625" red="0.218987" />
+    <Direct_Signal_Attenuation blue="3.25729" green="2.53007" red="3.18177" />
+</Depth>
+<Depth val="0.57">
+    <Backscatter_Attenuation blue="-0.019442" green="-0.46481" red="0.0717919" />
+    <Direct_Signal_Attenuation blue="3.35199" green="2.64236" red="3.22739" />
+</Depth>
+<Depth val="0.56">
+    <Backscatter_Attenuation blue="-0.0372447" green="-0.582324" red="0.115569" />
+    <Direct_Signal_Attenuation blue="3.25729" green="2.56705" red="3.13681" />
+</Depth>
+<Depth val="0.55">
+    <Backscatter_Attenuation blue="-0.0295242" green="-0.614708" red="0.294019" />
+    <Direct_Signal_Attenuation blue="3.30428" green="2.56705" red="3.27369" />
+</Depth>
+<Depth val="0.54">
+    <Backscatter_Attenuation blue="0.0712196" green="-0.518546" red="0.547505" />
+    <Direct_Signal_Attenuation blue="3.40044" green="2.56705" red="3.51606" />
+</Depth>
+<Depth val="0.53">
+    <Backscatter_Attenuation blue="0.0637312" green="-0.537052" red="0.505432" />
+    <Direct_Signal_Attenuation blue="3.35199" green="2.53007" red="3.46606" />
+</Depth>
+<Depth val="0.53">
+    <Backscatter_Attenuation blue="0.0279417" green="-0.775968" red="0.326366" />
+    <Direct_Signal_Attenuation blue="3.25729" green="2.6807" red="3.18177" />
+</Depth>
+<Depth val="0.52">
+    <Backscatter_Attenuation blue="0.130305" green="-0.459237" red="0.397623" />
+    <Direct_Signal_Attenuation blue="3.44965" green="2.71952" red="3.36839" />
+</Depth>
+<Depth val="0.52">
+    <Backscatter_Attenuation blue="-0.0372126" green="-0.742897" red="0.392898" />
+    <Direct_Signal_Attenuation blue="3.30428" green="2.60448" red="3.46606" />
+</Depth>
+<Depth val="0.52">
+    <Backscatter_Attenuation blue="-0.0448785" green="-0.902696" red="0.533705" />
+    <Direct_Signal_Attenuation blue="3.30428" green="2.60448" red="3.46606" />
+</Depth>
+<Depth val="0.52">
+    <Backscatter_Attenuation blue="0.0168582" green="-0.519451" red="0.464718" />
+    <Direct_Signal_Attenuation blue="3.40044" green="2.79864" red="3.56687" />
+</Depth>
+<Depth val="0.51">
+    <Backscatter_Attenuation blue="0.205948" green="-0.332192" red="0.626107" />
+    <Direct_Signal_Attenuation blue="3.49966" green="2.83896" red="3.46606" />
+</Depth>
+<Depth val="0.51">
+    <Backscatter_Attenuation blue="0.0550095" green="-0.501058" red="0.345656" />
+    <Direct_Signal_Attenuation blue="3.30428" green="2.56705" red="3.27369" />
+</Depth>
+<Depth val="0.51">
+    <Backscatter_Attenuation blue="0.145301" green="-0.438976" red="0.679649" />
+    <Direct_Signal_Attenuation blue="3.49966" green="2.71952" red="3.46606" />
+</Depth>
+<Depth val="0.51">
+    <Backscatter_Attenuation blue="0.00337563" green="-0.475156" red="0.194651" />
+    <Direct_Signal_Attenuation blue="3.16537" green="2.6807" red="3.27369" />
+</Depth>
+<Depth val="0.5">
+    <Backscatter_Attenuation blue="0.201697" green="-0.51341" red="0.740274" />
+    <Direct_Signal_Attenuation blue="3.49966" green="2.83896" red="3.51606" />
+</Depth>
+<Depth val="0.5">
+    <Backscatter_Attenuation blue="-0.00314368" green="-0.703522" red="0.545565" />
+    <Direct_Signal_Attenuation blue="3.30428" green="2.71952" red="3.46606" />
+</Depth>
+<Depth val="0.5">
+    <Backscatter_Attenuation blue="0.2152" green="-0.375039" red="0.662377" />
+    <Direct_Signal_Attenuation blue="3.55047" green="2.75883" red="3.51606" />
+</Depth>
+<Depth val="0.5">
+    <Backscatter_Attenuation blue="0.190256" green="-0.354672" red="0.53716" />
+    <Direct_Signal_Attenuation blue="3.55047" green="2.75883" red="3.51606" />
+</Depth>
+<Depth val="0.5">
+    <Backscatter_Attenuation blue="0.092979" green="-0.432454" red="0.328992" />
+    <Direct_Signal_Attenuation blue="3.55047" green="2.75883" red="3.51606" />
+</Depth>
+<Depth val="0.5">
+    <Backscatter_Attenuation blue="0.159308" green="-0.482018" red="0.400104" />
+    <Direct_Signal_Attenuation blue="3.60212" green="2.6807" red="3.51606" />
+</Depth>
+<Depth val="0.51">
+    <Backscatter_Attenuation blue="0.388512" green="-0.228606" red="1.32157" />
+    <Direct_Signal_Attenuation blue="3.87403" green="2.9212" red="4.00619" />
+</Depth>
+<Depth val="0.52">
+    <Backscatter_Attenuation blue="0.000951398" green="-0.433153" red="0.490664" />
+    <Direct_Signal_Attenuation blue="3.49966" green="2.79864" red="3.61853" />
+</Depth>
+<Depth val="0.52">
+    <Backscatter_Attenuation blue="-0.0236893" green="-0.447575" red="0.40957" />
+    <Direct_Signal_Attenuation blue="3.35199" green="2.6807" red="3.46606" />
+</Depth>
+<Depth val="0.52">
+    <Backscatter_Attenuation blue="0.141405" green="-0.400685" red="0.415544" />
+    <Direct_Signal_Attenuation blue="3.60212" green="2.79864" red="3.46606" />
+</Depth>
+<Depth val="0.52">
+    <Backscatter_Attenuation blue="0.111065" green="-0.401659" red="0.635524" />
+    <Direct_Signal_Attenuation blue="3.60212" green="2.79864" red="3.67105" />
+</Depth>

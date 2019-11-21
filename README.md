@@ -12,31 +12,20 @@ University of Haifa
 ## To Do:
 
 Overall:
-* Add comments and check style guide
 * Optimize code
 
 Running the program
 * (ROS) Make it run via launch file
 * (ROS) Check is catkin_make will actually build the files needed
 
-Single Image Application
-* create YAML file to provide image formation: depth, distance, color patch size and location, method, estimation or calculation
-* write script that creates that YAML file (EXTRA)
-
 New Model Method:
 * Wideband veiling light [FUTURE]:
   * Calculate average background pixel using image processing
-  * Calculate using known camera and water properties (EXTRA)
 
 ROS Application
-* image_correct file for ROS
-* new yaml file for ROS application
-* implement with and without SLAM
 * add optimization
 * check if is_adaptive is needed
 
-USB Application
-* Start it
 
 ## Getting Started
 
@@ -107,10 +96,14 @@ chmod +x build.sh
 
 ## Run
 
-In the `underwater_color_enhance` repository:
-
 For one image (no ROS implementation), based on the parameters in `image_config.yaml`:
 
 ```
-./Options/Image/image_correct
+roslaunch underwater_color_enhance image_color_enhance.launch
+```
+
+For rosbag files, based on the parameters in `ros_config.yaml`:
+
+```
+roslaunch underwater_color_enhance ros_color_enhance.launch
 ```

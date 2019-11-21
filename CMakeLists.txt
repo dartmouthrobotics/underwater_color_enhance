@@ -49,26 +49,31 @@ include_directories(include
   ${Boost_INCLUDE_DIRS}
   ${CMAKE_SOURCE_DIR}/yaml-cpp/include
   ${CMAKE_SOURCE_DIR}/ticpp
+  /home/darobot/orb_slam/ORB_SLAM2/msg_gen/cpp/include
+  /home/darobot/Research/escalibr/catkin_ws/src/escalibr/include
 )
 
 
 add_executable(myProgram
   src/Options/ros_correct.cpp
   src/ColorCorrect.cpp
+  src/ImageHandler.cpp
   src/NewModel.cpp
+  src/Scene.cpp
 )
 
 add_executable(secondProgram
   src/Options/image_correct.cpp
   src/ColorCorrect.cpp
-  src/ImageHandler.cpp
   src/NewModel.cpp
+  src/Scene.cpp
 )
 
 add_library(${PROJECT_NAME}
   src/ColorCorrect.cpp
   src/ImageHandler.cpp
   src/NewModel.cpp
+  src/Scene.cpp
 )
 
 target_link_libraries(myProgram
@@ -88,12 +93,12 @@ target_link_libraries(secondProgram
 
 roslint_cpp(
   src/Options/image_correct.cpp
-  src/Options/ros_correct.cpp
   src/ColorCorrect.cpp
   include/${PROJECT_NAME}/ColorCorrect.h
   src/ImageHandler.cpp
   include/${PROJECT_NAME}/ImageHandler.h
   include/${PROJECT_NAME}/Method.h
+  src/Scene.cpp
   include/${PROJECT_NAME}/Scene.h
   src/NewModel.cpp
   include/${PROJECT_NAME}/NewModel.h

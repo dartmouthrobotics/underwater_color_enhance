@@ -1,0 +1,31 @@
+# Input image to be enhanced
+camera_topic: "/camera/image_raw"
+depth_topic: "/mavros/vfr_hud"
+
+# Camera properties
+est_veiling_light: true
+# true: average background sample
+background_sample: [650, 555, 2, 2]    # x, y, width, height (1 - one point sample)
+# false: calculate
+camera_response_filename: "Sony_IMX322LQJ-C_Camera_Response.csv"
+jerlov_water_filename: "Jerlov_Water_Types.csv"
+water_type: "Jerlov IA"
+
+# Scene properties
+distance: 0.33
+color_1_sample: [516, 591, 2, 2]  # x, y, width, height (white recommended)
+color_2_sample: [1341, 611, 2, 2] # x, y, width, height (black recommended)
+
+# Method
+method: 0
+optimize: false
+slam_input: false
+
+show_image: true
+check_time: false
+log_screen: false
+
+save_data: false
+prior_data: false
+output_filename: "output.xml"
+input_filename: "escalibr_color.xml"
