@@ -7,6 +7,7 @@ add_compile_options(-std=c++11)
 
 add_subdirectory(third-party/yaml-cpp)
 add_subdirectory(third-party/ticpp)
+add_subdirectory(third-party/dlib)
 
 
 find_package(OpenCV 3.0 QUIET)
@@ -47,8 +48,7 @@ catkin_package(
 include_directories(include
   ${catkin_INCLUDE_DIRS}
   ${Boost_INCLUDE_DIRS}
-  ${CMAKE_SOURCE_DIR}/yaml-cpp/include
-  ${CMAKE_SOURCE_DIR}/ticpp
+  third-party/dlib
   /home/darobot/orb_slam/ORB_SLAM2/msg_gen/cpp/include
   /home/darobot/Research/escalibr/catkin_ws/src/escalibr/include
 )
@@ -81,6 +81,7 @@ target_link_libraries(myProgram
   ${catkin_LIBRARIES}
   ${OpenCV_LIBS}
   yaml-cpp
+  dlib::dlib
 )
 
 target_link_libraries(secondProgram
@@ -89,6 +90,7 @@ target_link_libraries(secondProgram
   ${OpenCV_LIBS}
   ${Boost_LIBRARIES}
   yaml-cpp
+  dlib::dlib
 )
 
 roslint_cpp(

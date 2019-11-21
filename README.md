@@ -12,7 +12,7 @@ University of Haifa
 ## To Do:
 
 Overall:
-* Optimize code
+* Add escalibr, ping nodelet, and ORB-SLAM2 (modified) into catkin_ws
 
 Running the program
 * (ROS) Make it run via launch file
@@ -63,6 +63,10 @@ if(YAML_CPP_BUILD_TOOLS)
   add_subdirectory(util)
 endif()
 ```
+
+* ticpp
+
+* dlib
 
 ## Build
 
