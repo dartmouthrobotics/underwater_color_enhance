@@ -30,8 +30,12 @@ int main(int argc, char* argv[])
   float DISTANCE = config["distance"].as<float>();
   double DEPTH = config["depth"].as<double>();
 
+  std::string CAMERA_RESPONSE_FILENAME = config["camera_response_filename"].as<std::string>();
+  std::string JERLOV_WATER_FILENAME = config["jerlov_water_filename"].as<std::string>();
+  std::string WATER_TYPE = config["water_type"].as<std::string>();
+
   // Color enhancement method
-  int METHOD_ID = config["method_id"].as<float>();
+  int METHOD_ID = config["method_id"].as<int>();
 
   // TO DO: if optimized then we need to provide the current attenuation values
   bool OPTIMIZE = config["optimize"].as<bool>();
@@ -46,14 +50,11 @@ int main(int argc, char* argv[])
   // TO DO: Instead use image processing to calculate the average background color
   std::vector<int> BACKGROUND_SAMPLE = config["background_sample"].as<std::vector<int>>();
 
-  std::string CAMERA_RESPONSE_FILENAME = config["camera_response_filename"].as<std::string>();
-  std::string JERLOV_WATER_FILENAME = config["jerlov_water_filename"].as<std::string>();
-  std::string WATER_TYPE = config["water_type"].as<std::string>();
-
   // Other checks
   bool SHOW_IMAGE = config["show_image"].as<bool>();
   bool CHECK_TIME = config["check_time"].as<bool>();
   bool LOG_SCREEN = config["log_screen"].as<bool>();
+
   bool SAVE_DATA = config["save_data"].as<bool>();
   bool PRIOR_DATA = config["prior_data"].as<bool>();
   const std::string OUTPUT_FILENAME = config["output_filename"].as<std::string>();

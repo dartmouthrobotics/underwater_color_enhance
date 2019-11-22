@@ -4,19 +4,19 @@ image: "/home/darobot/Research/color_correct/catkin_ws/src/underwater_color_enha
 # Scene properties
 distance: 0.33
 depth: 0.6
-color_1_sample: [505, 585, 45, 35]  # x, y, width, height (white recommended)
-color_2_sample: [1335, 605, 15, 10] # x, y, width, height (black recommended)
+camera_response_filename: "/home/darobot/Research/color_correct/catkin_ws/src/underwater_color_enhance/Camera_Response_Files/Sony_IMX322LQJ-C_Camera_Response.csv"
+jerlov_water_filename: "/home/darobot/Research/color_correct/catkin_ws/src/underwater_color_enhance/Jerlov_Water/Jerlov_Water_Types.csv"
+water_type: "Jerlov I"
 
 # Method
-method: 0
+method_id: 0
 optimize: false
+color_1_sample: [505, 585, 45, 35]  # x, y, width, height (white recommended)
+color_2_sample: [1335, 605, 15, 10] # x, y, width, height (black recommended)
 est_veiling_light: true
 # true: average background sample
 background_sample: [650, 555, 2, 2]  # x, y, width, height (1 - one point sample)
 # false: calculate
-camera_response_filename: "/home/darobot/Research/color_correct/catkin_ws/src/underwater_color_enhance/Camera_Response_Files/Sony_IMX322LQJ-C_Camera_Response.csv"
-jerlov_water_filename: "/home/darobot/Research/color_correct/catkin_ws/src/underwater_color_enhance/Jerlov_Water/Jerlov_Water_Types.csv"
-water_type: "Jerlov I"
 
 show_image: true
 check_time: true

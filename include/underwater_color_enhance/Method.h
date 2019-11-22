@@ -31,8 +31,9 @@ public:
   ~Method() {}
 
   bool EST_VEILING_LIGHT; /**< true: estimate as background color in image; false: calculate */
-  Scene *scene; /**< contains the physical underwater properties. */
-  float depth;  /**< current altitude depth measurement. */
+  bool OPTIMIZE;  /**< true: optimize attenuation values; false: calculate per image */
+  Scene *scene;   /**< contains the physical underwater properties. */
+  float depth;    /**< current altitude depth measurement. */
 
   bool PRIOR_DATA;  /**< true: use data that is loaded. false: calculate attenuation values */
 

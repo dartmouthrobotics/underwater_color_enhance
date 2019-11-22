@@ -33,7 +33,7 @@ public:
    *      0:    NewModel
    *      else: NewModel (safety measures)
    *  \param EST_VEILING_LIGHT parameter for method object.
-   *  \param OPTIMIZE see below.
+   *  \param OPTIMIZE - true: optimize attenuation values.
    *  \param SAVE_DATA - true: write attenuation values to file.
    *  \param CHECK_TIME - true: track and publish time periods.
    *  \param LOG_SCREEN - true: print log statements.
@@ -67,8 +67,6 @@ private:
   Method *method;         /**< object that contains the set up color enhancement method.*/
 
   std::string OUTPUT_FILENAME;  /**< name of the file that will contain the save attenuation values */
-
-  bool OPTIMIZE;  /**< true: optimize attenuation values. */
 };
 
 }  // namespace underwater_color_enhance

@@ -97,6 +97,55 @@ cv::Mat NewModel::color_correct(cv::Mat& img)
     cv::Scalar color_2_obs = mean(color_2_region);
 
     calc_attenuation(color_1_obs, color_2_obs, wideband_veiling_light);
+
+    if (this->OPTIMIZE)
+    {
+      std::cout << "LOG WARNING: Optimization is not currently implemented." << std::endl;
+      // if (this->depth < this->depth_max_range && this->depth > this->depth_max_range - this->RANGE)
+      // {
+        // opt_vector observed_input;
+
+        // std::vector<std::pair<opt_vector, double>> observed_samples_green;
+        // std::vector<std::pair<opt_vector, double>> observed_samples_red;
+
+        // observed_input(0) = (double)color_1_obs[0];
+        // observed_input(1) = (double)wideband_veiling_light[0];
+        //
+        // this->observed_samples_blue.push_back(std::make_pair(observed_input, this->COLOR_1_TRUTH[0]));
+        //
+        // observed_input(0) = (double)color_2_obs[0];
+        //
+        // this->observed_samples_blue.push_back(std::make_pair(observed_input, this->COLOR_2_TRUTH[0]));
+
+        // observed_input(0) = (double)color_1_obs[1];
+        // observed_input(1) = (double)wideband_veiling_light[1];
+        //
+        // observed_samples_green.push_back(std::make_pair(this->observed_input, this->COLOR_1_TRUTH[1]));
+        //
+        // this->observed_input(0) = (double)color_2_obs[1];
+        //
+        // this->observed_samples_green.push_back(std::make_pair(this->observed_input, this->COLOR_2_TRUTH[1]));
+        //
+        // this->observed_input(0) = (double)color_1_obs[2];
+        // this->observed_input(1) = (double)wideband_veiling_light[2];
+        //
+        // this->observed_samples_red.push_back(std::make_pair(this->observed_input, this->COLOR_1_TRUTH[2]));
+        //
+        // this->observed_input(0) = (double)color_2_obs[2];
+        //
+        // this->observed_samples_red.push_back(std::make_pair(this->observed_input, this->COLOR_2_TRUTH[2]));
+      // }
+      // else
+      // {
+      //   opt_vector optimized_att_blue;
+      //   optimized_att_blue = 1;
+      //   dlib::solve_least_squares_lm(dlib::objective_delta_stop_strategy(1e-7).be_verbose(),
+      //                                 &NewModel::residual,
+      //                                 dlib::derivative(&NewModel::residual),
+      //                                 &NewModel::observed_samples_blue,
+      //                                 optimized_att_blue);
+      // }
+    }
   }
 
   if (this->CHECK_TIME)
@@ -356,6 +405,26 @@ cv::Mat NewModel::color_correct_slam(cv::Mat& img, std::vector<cv::Point2f> poin
 }
 
 
+double model(const NewModel::opt_vector& input, const NewModel::opt_vector& params)
+{
+  const double backscatter_val = params(0);
+  const double direct_signal_val = params(1);
+
+  const double observed_color = input(0);
+  const double wideband_veiling_light = input(1);
+
+  const double correct_color = (observed_color - (wideband_veiling_light * backscatter_val)) / direct_signal_val;
+
+  return correct_color;
+}
+
+
+double NewModel::residual(const std::pair<opt_vector, double>& data, const opt_vector& params)
+{
+  return model(data.first, params) - data.second;
+}
+
+
 /** Calculate background pixel using known characteristics of camera and underwater_scene
  */
 cv::Scalar NewModel::calc_wideband_veiling_light()
@@ -384,9 +453,9 @@ void NewModel::calc_attenuation(cv::Scalar color_1_obs, cv::Scalar color_2_obs, 
   float channel_bs;
   for (int i = 0; i < 3; i++)
   {
-    channel_bs =  (this->color_1_truth[i] * color_2_obs[i]) - (this->color_2_truth[i] * color_1_obs[i]) +
-      (this->color_2_truth[i] - this->color_1_truth[i]) * wideband_veiling_light[i];
-    channel_bs = channel_bs / ((this->color_2_truth[i] - this->color_1_truth[i]) * wideband_veiling_light[i]);
+    channel_bs =  (this->COLOR_1_TRUTH[i] * color_2_obs[i]) - (this->COLOR_2_TRUTH[i] * color_1_obs[i]) +
+      (this->COLOR_2_TRUTH[i] - this->COLOR_1_TRUTH[i]) * wideband_veiling_light[i];
+    channel_bs = channel_bs / ((this->COLOR_2_TRUTH[i] - this->COLOR_1_TRUTH[i]) * wideband_veiling_light[i]);
     this->backscatter_att[i] = -1.0 * log(channel_bs) / this->scene->DISTANCE;
   }
 
@@ -396,7 +465,7 @@ void NewModel::calc_attenuation(cv::Scalar color_1_obs, cv::Scalar color_2_obs, 
   {
     channel_ds =  color_2_obs[i] - wideband_veiling_light[i] *
       (1.0 - exp(-1.0 * this->backscatter_att[i] * this->scene->DISTANCE));
-    channel_ds = channel_ds / this->color_2_truth[i];
+    channel_ds = channel_ds / this->COLOR_2_TRUTH[i];
     this->direct_signal_att[i] = -1.0 * log(channel_ds) / this->scene->DISTANCE;
   }
 }

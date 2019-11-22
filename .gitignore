@@ -1,2 +1,11 @@
 # ignore all build folder
 **/build
+lib
+build.sh
+escalibr_color.xml
+output_escalibr.xml
+
+Images/image_corrected.jpg
+Images/image_slam.jpg
+Images/image_voronoi.jpg
+Images/image.jpg

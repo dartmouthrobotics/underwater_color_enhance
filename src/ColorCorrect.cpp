@@ -20,7 +20,6 @@ ColorCorrect::ColorCorrect(Scene& underwater_scene, int METHOD_ID, bool EST_VEIL
   std::string OUTPUT_FILENAME)
 {
   this->underwater_scene = underwater_scene;
-  this->OPTIMIZE = OPTIMIZE;
   this->OUTPUT_FILENAME = OUTPUT_FILENAME;
 
   if (METHOD_ID == 0)
@@ -30,6 +29,7 @@ ColorCorrect::ColorCorrect(Scene& underwater_scene, int METHOD_ID, bool EST_VEIL
     this->method->SAVE_DATA = SAVE_DATA;
     this->method->CHECK_TIME = CHECK_TIME;
     this->method->PRIOR_DATA = PRIOR_DATA;
+    this->method->OPTIMIZE = OPTIMIZE;
     this->method->LOG_SCREEN = LOG_SCREEN;
     this->method->file_initialized = false;
     this->method->scene = &this->underwater_scene;

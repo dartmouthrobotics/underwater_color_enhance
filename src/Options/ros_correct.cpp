@@ -41,11 +41,18 @@ int main(int argc, char* argv[])
   // NOTE: distance will not be used in cases when SLAM features are integrated
   float DISTANCE = config["distance"].as<float>();
 
+  std::string CAMERA_RESPONSE_FILENAME = config["camera_response_filename"].as<std::string>();
+  std::string JERLOV_WATER_FILENAME = config["jerlov_water_filename"].as<std::string>();
+  std::string WATER_TYPE = config["water_type"].as<std::string>();
+
   // Color enhancement method
-  int METHOD_ID = config["method_id"].as<float>();
+  int METHOD_ID = config["method_id"].as<int>();
 
   // TO DO: if optimized then we need to provide the current attenuation values
   bool OPTIMIZE = config["optimize"].as<bool>();
+
+  // Check if SLAM features will be used
+  bool SLAM_INPUT = config["slam_input"].as<bool>();
 
   // Color patch locations if using color chart
   std::vector<int> COLOR_1_SAMPLE = config["color_1_sample"].as<std::vector<int>>();
@@ -56,13 +63,6 @@ int main(int argc, char* argv[])
 
   // TO DO: Instead use image processing to calculate average background color
   std::vector<int> BACKGROUND_SAMPLE = config["background_sample"].as<std::vector<int>>();
-
-  std::string CAMERA_RESPONSE_FILENAME = config["camera_response_filename"].as<std::string>();
-  std::string JERLOV_WATER_FILENAME = config["jerlov_water_filename"].as<std::string>();
-  std::string WATER_TYPE = config["water_type"].as<std::string>();
-
-  // Check if SLAM features will be used
-  bool SLAM_INPUT = config["slam_input"].as<bool>();
 
   // Other checks
   bool SHOW_IMAGE = config["show_image"].as<bool>();
