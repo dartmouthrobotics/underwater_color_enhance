@@ -1,6 +1,14 @@
-# Underwater Color Enhance Method
+# Underwater Color Enhancement Method
+
+[Dartmouth Reality and Robotics Lab](http://rlab.cs.dartmouth.edu/home/)
+
+Authors: [Monika Roznere](monikaroznere.com) and [Alberto Quattrini Li](https://sites.google.com/view/albertoq)
 
 NOTE: Current application should work well. There are some small issues that need to dealt with, see below.
+
+## Related Publications:
+
+M.  Roznere  and  A.  Quattrini  Li,  “Real-time  model-based  image  color correction  for  underwater  robots,” IROS, 2019. [PDF](https://arxiv.org/abs/1904.06437)
 
 ## License:
 
@@ -15,7 +23,7 @@ If you use our underwater color enhancement application in an academic work, ple
  }
 ```
 
-## To Do:
+## Work in Progress:
 
 Overall:
 * Add escalibr, ping nodelet, and ORB-SLAM2 (modified) into catkin_ws.
@@ -84,8 +92,8 @@ endif()
 ## Build
 
 ```
-chmod +x build.sh
-./build.sh
+catkin_make
+source devel/setup.bash
 ```
 
 ## Configuration
@@ -116,7 +124,7 @@ chmod +x build.sh
 * output_filename: \<xml file to save attenuation values with its depth measurement\>
 * input_filename: \<xml file to load attenuation values with its depth measurement\>
 
-
+<br><br>
 `config/ros_config.yaml`:
 * camera_topic: \<topic name for the camera image messages\>
 * depth_topic: \<topic name for the altitude depth messages\> <br><br>
