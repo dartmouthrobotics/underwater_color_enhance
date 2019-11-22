@@ -70,6 +70,8 @@ Clone these repositories as well:
 
 ## Third-party Packages
 
+In the `third-party` directory, clone these repositories:
+
 * [yaml-cpp](https://github.com/jbeder/yaml-cpp)
 
 In its CMakeLists.txt, comment out:

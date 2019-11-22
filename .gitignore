@@ -2,6 +2,7 @@
 **/build
 lib
 build.sh
+
 escalibr_color.xml
 output_escalibr.xml
 
@@ -9,3 +10,7 @@ Images/image_corrected.jpg
 Images/image_slam.jpg
 Images/image_voronoi.jpg
 Images/image.jpg
+
+third-party/dlib
+third-party/ticpp
+third-party/yaml-cpp
