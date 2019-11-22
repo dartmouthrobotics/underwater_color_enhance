@@ -11,6 +11,4 @@ Images/image_slam.jpg
 Images/image_voronoi.jpg
 Images/image.jpg
 
-third-party/dlib
-third-party/ticpp
-third-party/yaml-cpp
+third-party

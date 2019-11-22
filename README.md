@@ -70,6 +70,12 @@ Clone these repositories as well:
 
 ## Third-party Packages
 
+Run:
+
+```
+mkdir third-party
+```
+
 In the `third-party` directory, clone these repositories:
 
 * [yaml-cpp](https://github.com/jbeder/yaml-cpp)
