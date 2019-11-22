@@ -26,7 +26,7 @@ If you use our underwater color enhancement application in an academic work, ple
 ## Work in Progress:
 
 Overall:
-* Add escalibr, ping nodelet, and ORB-SLAM2 (modified) into catkin_ws.
+* Add escalibr, ping nodelet, and ORB-SLAM2 (modified) into catkin_ws. Add correct formats in the CMakeLists.txt.
 * Time optimize color enhancement.
   * Currently it takes ~7 ms to enhance an image (1920 x 1080).
 * Go through third-party installations to check if instructions are up to date.
