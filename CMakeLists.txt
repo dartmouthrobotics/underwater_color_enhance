@@ -28,6 +28,7 @@ find_package(catkin REQUIRED COMPONENTS
   message_filters
   image_transport
   roslint
+  ORB_SLAM2
 )
 
 
@@ -42,6 +43,7 @@ catkin_package(
                  opencv2
                  message_filters
                  image_transport
+                 ORB_SLAM2
 )
 
 
@@ -49,8 +51,7 @@ include_directories(include
   ${catkin_INCLUDE_DIRS}
   ${Boost_INCLUDE_DIRS}
   third-party/dlib
-  /home/darobot/orb_slam/ORB_SLAM2/msg_gen/cpp/include
-  /home/darobot/Research/escalibr/catkin_ws/src/escalibr/include
+#  /home/darobot/Research/escalibr/catkin_ws/src/escalibr/include
 )
 
 
@@ -82,6 +83,7 @@ target_link_libraries(myProgram
   ${OpenCV_LIBS}
   yaml-cpp
   dlib::dlib
+  ticpp
 )
 
 target_link_libraries(secondProgram
@@ -91,6 +93,7 @@ target_link_libraries(secondProgram
   ${Boost_LIBRARIES}
   yaml-cpp
   dlib::dlib
+  ticpp
 )
 
 roslint_cpp(
