@@ -2,7 +2,7 @@
 
 [Dartmouth Reality and Robotics Lab](http://rlab.cs.dartmouth.edu/home/)
 
-Authors: [Monika Roznere](monikaroznere.com) and [Alberto Quattrini Li](https://sites.google.com/view/albertoq)
+Authors: [Monika Roznere](http://monikaroznere.com) and [Alberto Quattrini Li](https://sites.google.com/view/albertoq)
 
 NOTE: Current application should work well. There are some small issues that need to dealt with, see below.
 
