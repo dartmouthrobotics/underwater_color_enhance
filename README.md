@@ -65,8 +65,7 @@ Clone these repositories as well:
 
 * [escalibr](https://github.com/dartmouthrobotics/escalibr)
 
-* modified monocular ORB-SLAM
-  * Will add branch in the future.
+* [modified monocular ORB-SLAM](https://github.com/dartmouthrobotics/ORB_SLAM2)
 
 ## Third-party Packages
 
