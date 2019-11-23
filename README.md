@@ -46,7 +46,8 @@ Set up your catkin workspace
 
 ```
 mkdir -p catkin_ws/src
-cd catkin_ws/src
+cd catkin_ws/src/
+catkin_init_workspace
 ```
 
 ## Install
@@ -54,26 +55,52 @@ cd catkin_ws/src
 Clone repository:
 
 ```
-git clone
-cd underwater_color_enhance
+git clone https://github.com/dartmouthrobotics/underwater_color_enhance
 ```
 
 Clone and build this repository as well:
 
 * [modified monocular ORB-SLAM](https://github.com/dartmouthrobotics/ORB_SLAM2)
 
+```
+git clone https://github.com/dartmouthrobotics/ORB_SLAM2
+cd ORB_SLAM2/
+cd Thirdparty/
+git clone https://github.com/stevenlovegrove/Pangolin
+cd Pangolin/
+mkdir build
+cd build/
+cmake ..
+cmake --build .
+cd ../../../
+chmod +x build.sh
+./build.sh
+export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:$(pwd)/Examples/ROS/ORB_SLAM2ROS
+chmod +x build_ros.sh
+./build_ros.sh
+```
+
 ## Third-party Packages
 
 Run:
 
 ```
+cd underwater_color_enhance/
 mkdir third-party
+cd third-party/
 ```
 
 In the `third-party` directory, clone these repositories:
 
 * [yaml-cpp](https://github.com/jbeder/yaml-cpp)
 
+```
+git clone https://github.com/jbeder/yaml-cpp
+git clone https://github.com/wxFormBuilder/ticpp
+git clone https://github.com/davisking/dlib
+```
+
+<!--
 In its CMakeLists.txt, comment out:
 ```
 ### Extras
@@ -86,6 +113,7 @@ if(YAML_CPP_BUILD_TOOLS)
   add_subdirectory(util)
 endif()
 ```
+-->
 
 * [ticpp](https://github.com/wxFormBuilder/ticpp)
 
