@@ -6,11 +6,11 @@ Authors: [Monika Roznere](http://monikaroznere.com) and [Alberto Quattrini Li](h
 
 NOTE: Current application should work well. There are some small issues that need to dealt with, see below.
 
-## Related Publications:
+## Related Publications
 
 M.  Roznere  and  A.  Quattrini  Li,  “Real-time  model-based  image  color correction  for  underwater  robots,” IROS, 2019. [PDF](https://arxiv.org/abs/1904.06437)
 
-## License:
+## License
 
 If you use our underwater color enhancement application in an academic work, please cite:
 
@@ -23,7 +23,7 @@ If you use our underwater color enhancement application in an academic work, ple
  }
 ```
 
-## Work in Progress:
+## Work in Progress
 
 Overall:
 * Time optimize color enhancement.
