@@ -149,11 +149,11 @@ source devel/setup.bash
 * output_filename: \<xml file to save attenuation values with its depth measurement\>
 * input_filename: \<xml file to load attenuation values with its depth measurement\>
 
-
+<br><br>
 Note: `optimize` option will not color correct any images. Instead it will go through and calculate optimized attenuation values,
 which can then be used later through the `prior` data option.
 
-<br><br>
+<br>
 `config/ros_config.yaml`:
 * camera_topic: \<topic name for the camera image messages\>
 * depth_topic: \<topic name for the altitude depth messages\> <br><br>
