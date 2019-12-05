@@ -18,7 +18,7 @@ If you use our underwater color enhancement application in an academic work, ple
 @inproceedings{RoznereColor2019,
   title={Real-time Model-based Image Color Correction for Underwater Robots},
   author={Monika Roznere and Alberto {Quattrini Li}},
-  booktitle=iros,
+  booktitle={Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems},
   year={2019}
  }
 ```
