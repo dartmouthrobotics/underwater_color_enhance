@@ -33,10 +33,6 @@ New Model Method:
 * Wideband veiling light [FUTURE]:
   * Calculate average background pixel using image processing
 
-ROS Application
-* add optimization
-
-
 ## Getting Started
 
 This package has been tested on Ubuntu 16.04.
@@ -153,6 +149,10 @@ source devel/setup.bash
 * output_filename: \<xml file to save attenuation values with its depth measurement\>
 * input_filename: \<xml file to load attenuation values with its depth measurement\>
 
+
+Note: `optimize` option will not color correct any images. Instead it will go through and calculate optimized attenuation values,
+which can then be used later through the `prior` data option.
+
 <br><br>
 `config/ros_config.yaml`:
 * camera_topic: \<topic name for the camera image messages\>
@@ -165,7 +165,7 @@ source devel/setup.bash
 * water_type: \<define approximate type of water the image was taken in\> <br><br>
 
 * method: <0: A Revised Underwater Image Formation Model>
-* optimize: <true: optimize attenuation values in depth range | false: calculate attenuation values per image frame> (currently not implemented)
+* optimize: <true: optimize attenuation values in depth range | false: calculate attenuation values per image frame>
 * slam_input: <true/false: distance values are used from monocular ORB-SLAM features\>
 * color_1_sample: [\<x-coordinate\>, \<y-coordinate\>, \<width of region\>, \<height of region\>]
 * color_2_sample: [\<x-coordinate\>, \<y-coordinate\>, \<width of region\>, \<height of region\>]

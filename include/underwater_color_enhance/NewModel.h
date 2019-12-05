@@ -14,6 +14,7 @@
 #include <vector>
 #include <string>
 #include <utility>
+#include <tinyxml.h>
 #include <opencv2/opencv.hpp>
 #include <dlib/optimization.h>
 
@@ -33,7 +34,7 @@ public:
   NewModel() {}
   ~NewModel() {}
 
-  typedef dlib::matrix<double, 2, 1> opt_vector;
+  void calculate_optimized_attenuation(cv::Mat& img) override;
 
   /** See functions in Method class
    */
@@ -47,22 +48,25 @@ public:
   void load_data(std::string input_filename) override;
 
 private:
-  float COLOR_1_TRUTH [3] = {242, 243, 243};  /**< White patch ground truth in BGR */
-  float COLOR_2_TRUTH [3] = {52, 52, 52};     /**< Black patch ground turth in BGR */
+  const double COLOR_1_TRUTH [3] = {242, 243, 243};  /**< White patch ground truth in BGR */
+  const double COLOR_2_TRUTH [3] = {52, 52, 52};     /**< Black patch ground turth in BGR */
 
   float backscatter_att [3];    /**< Contains the backscatter attenuation values for that depth */
   float direct_signal_att [3];  /**< Contains the direct signal attenuation values for that depth */
 
   std::map<float, std::vector<double>> att_map; /** Contains the mapping of depth to pre calculated att values */
 
-  float RANGE = 1.0;
-  float depth_max_range = 1.0;
-  std::vector<std::pair<opt_vector, double>> observed_samples_blue;
+  float RANGE = 0.5;
+  float depth_max_range = 0.5;
+  dlib::matrix<double, 2, 1> observed_input;
+  std::vector<std::pair<dlib::matrix<double, 2, 1>, double>> observed_samples_blue;
+  std::vector<std::pair<dlib::matrix<double, 2, 1>, double>> observed_samples_green;
+  std::vector<std::pair<dlib::matrix<double, 2, 1>, double>> observed_samples_red;
 
   /** Functions for optimizing attenuation values in a set range of depth.
    */
   // double model(const opt_vector& input, const opt_vector& params);
-  double residual(const std::pair<opt_vector, double>& data, const opt_vector& params);
+  // double residual(const std::pair<opt_vector, double>& data, const opt_vector& params);
 
   /** Functions for calculating or estimating parameters vital to the enhancement algorithm.
    */

@@ -21,16 +21,28 @@ ColorCorrect::ColorCorrect(Scene& underwater_scene, int METHOD_ID, bool EST_VEIL
 {
   this->underwater_scene = underwater_scene;
   this->OUTPUT_FILENAME = OUTPUT_FILENAME;
+  this->OPTIMIZE = OPTIMIZE;
 
   if (METHOD_ID == 0)
   {
     this->method = new NewModel;
     this->method->EST_VEILING_LIGHT = EST_VEILING_LIGHT;
-    this->method->SAVE_DATA = SAVE_DATA;
     this->method->CHECK_TIME = CHECK_TIME;
-    this->method->PRIOR_DATA = PRIOR_DATA;
     this->method->OPTIMIZE = OPTIMIZE;
     this->method->LOG_SCREEN = LOG_SCREEN;
+
+    if (this->OPTIMIZE == true)
+    {
+      // Is this required? will attenuation not be saved?
+      this->method->SAVE_DATA = true;
+      this->method->PRIOR_DATA = false;
+    }
+    else
+    {
+      this->method->SAVE_DATA = SAVE_DATA;
+      this->method->PRIOR_DATA = PRIOR_DATA;
+    }
+
     this->method->file_initialized = false;
     this->method->scene = &this->underwater_scene;
     this->method->depth = this->underwater_scene.get_depth();
@@ -53,6 +65,13 @@ cv::Mat ColorCorrect::enhance(cv::Mat& img)
   cv::Mat corrected_img = this->method->color_correct(img);
 
   return corrected_img;
+}
+
+
+void ColorCorrect::optimize(cv::Mat& img)
+{
+  this->method->depth = this->underwater_scene.get_depth();
+  this->method->calculate_optimized_attenuation(img);
 }
 
 

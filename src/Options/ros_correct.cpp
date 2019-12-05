@@ -74,7 +74,7 @@ int main(int argc, char* argv[])
   std::string OUTPUT_FILENAME = ros::package::getPath("underwater_color_enhance") + "/" +
     config["output_filename"].as<std::string>();
   std::string INPUT_FILENAME = ros::package::getPath("underwater_color_enhance") + "/" +
-    config["input_filename"].as<std::string>();;
+    config["input_filename"].as<std::string>();
 
   if (LOG_SCREEN)
   {
@@ -99,6 +99,12 @@ int main(int argc, char* argv[])
       "/Camera_Response_Files/" + CAMERA_RESPONSE_FILENAME);
     underwater_scene.load_jerlov_water_data(ros::package::getPath("underwater_color_enhance") +
       "/Jerlov_Water/" + JERLOV_WATER_FILENAME, WATER_TYPE);
+  }
+
+  // TO DO: If we have SLAM, do not optimize the attenuation values
+  if (SLAM_INPUT)
+  {
+    OPTIMIZE = false;
   }
 
   if (LOG_SCREEN)

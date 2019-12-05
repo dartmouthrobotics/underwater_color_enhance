@@ -65,31 +65,45 @@ void ImageHandler::camera_depth_callback(const sensor_msgs::ImageConstPtr& img_m
   // Altitude depth measurement
   this->correction_method.set_depth(depth_msg->altitude);
 
-  // Color enhance image
-  cv::Mat corrected_frame = this->correction_method.enhance(cv_ptr->image);
-
-  if (this->CHECK_TIME)
+  if (this->correction_method.OPTIMIZE)
   {
-    this->end = clock();
-    std::cout << "Enhancement complete. Total time: " << double(this->end - this->begin) / CLOCKS_PER_SEC << std::endl;
+    // Calculate optimized attenuation values
+    this->correction_method.optimize(cv_ptr->image);
+
+    if (this->SAVE_DATA)
+    {
+      this->correction_method.save_final_data();
+    }
   }
-
-  if (this->SAVE_DATA)
+  else
   {
-    this->correction_method.save_final_data();
-  }
+    // Color enhance image
+    cv::Mat corrected_frame = this->correction_method.enhance(cv_ptr->image);
 
-  if (this->SHOW_IMAGE)
-  {
-    cv::imshow("Original", cv_ptr->image);
-    cv::imshow("Corrected", corrected_frame);
-    cv::waitKey(1);
-  }
+    if (this->CHECK_TIME)
+    {
+      this->end = clock();
+      std::cout << "Enhancement complete. Total time: " <<
+        static_cast<double>(this->end - this->begin) / CLOCKS_PER_SEC << std::endl;
+    }
 
-  if (ros::ok())
-  {
-    sensor_msgs::Image new_img;
-    this->img_pub_.publish(new_img);
+    if (this->SAVE_DATA)
+    {
+      this->correction_method.save_final_data();
+    }
+
+    if (this->SHOW_IMAGE)
+    {
+      cv::imshow("Original", cv_ptr->image);
+      cv::imshow("Corrected", corrected_frame);
+      cv::waitKey(1);
+    }
+
+    if (ros::ok())
+    {
+      sensor_msgs::Image new_img;
+      this->img_pub_.publish(new_img);
+    }
   }
 }
 

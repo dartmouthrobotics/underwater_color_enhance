@@ -47,6 +47,10 @@ public:
     std::string OUTPUT_FILENAME);
   ~ColorCorrect() {}
 
+  bool OPTIMIZE;  /**< determines if this program will be calculating optimized attenuation values */
+
+  void optimize(cv::Mat& img);
+
   /** Functions that lead to the current color enhancement methods.
    */
   cv::Mat enhance(cv::Mat& img);      /** requires image and depth **/

@@ -49,6 +49,8 @@ public:
   bool SAVE_DATA; /**< true: write attenuation values. false: do not */
   bool file_initialized;
 
+  virtual void calculate_optimized_attenuation(cv::Mat& img) = 0;
+
   /** Functions for applying the color enhancement method
    */
   virtual cv::Mat color_correct(cv::Mat& img) = 0;

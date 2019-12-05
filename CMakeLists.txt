@@ -51,6 +51,7 @@ include_directories(include
   ${catkin_INCLUDE_DIRS}
   ${Boost_INCLUDE_DIRS}
   third-party/dlib
+  third-party/ticpp
 )
 
 

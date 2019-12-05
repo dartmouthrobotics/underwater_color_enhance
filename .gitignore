@@ -8,3 +8,6 @@ Images/*
 
 # ignore third-party packages
 third-party/
+
+input.xml
+output.xml
