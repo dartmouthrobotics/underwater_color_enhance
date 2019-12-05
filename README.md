@@ -133,11 +133,13 @@ source devel/setup.bash
 * jerlov_water_filename: \<path to jerlov water properties file\>
 * water_type: \<define approximate type of water the image was taken in\> <br><br>
 
-* method: <0: A Revised Underwater Image Formation Model>
+* method: <0: A Revised Underwater Image Formation Model> <br><br>
+
 * color_1_sample: [\<x-coordinate\>, \<y-coordinate\>, \<width of region\>, \<height of region\>]
-* color_2_sample: [\<x-coordinate\>, \<y-coordinate\>, \<width of region\>, \<height of region\>]
-* est_veiling_light: <true: uses background sample to calculate average wideband veiling light | false: calculate wideband veiling light> <br><br>
-* background_sample: [\<x-coordinate\>, \<y-coordinate\>, \<width of region\>, \<height of region\>]
+* color_2_sample: [\<x-coordinate\>, \<y-coordinate\>, \<width of region\>, \<height of region\>] <br><br>
+
+* est_veiling_light: <true: uses background sample to calculate average wideband veiling light | false: calculate wideband veiling light>
+* background_sample: [\<x-coordinate\>, \<y-coordinate\>, \<width of region\>, \<height of region\>] <br><br>
 
 * show_image: \<true/false: shows raw and color corrected image\>
 * check_time: \<true/false: track and print to screen time latency at different points\>
@@ -162,13 +164,18 @@ which can then be used later through the `prior` data option. <br><br>
 * jerlov_water_filename: \<path to jerlov water properties file\>
 * water_type: \<define approximate type of water the image was taken in\> <br><br>
 
-* method: <0: A Revised Underwater Image Formation Model>
+* method: <0: A Revised Underwater Image Formation Model> <br><br>
+
 * optimize: <true: optimize attenuation values in depth range | false: calculate attenuation values per image frame>
-* slam_input: <true/false: distance values are used from monocular ORB-SLAM features\>
+* range: \<depth intervals for optimizing attenuation values\> <br><br>
+
+* slam_input: <true/false: distance values are used from monocular ORB-SLAM features\> <br><br>
+
 * color_1_sample: [\<x-coordinate\>, \<y-coordinate\>, \<width of region\>, \<height of region\>]
-* color_2_sample: [\<x-coordinate\>, \<y-coordinate\>, \<width of region\>, \<height of region\>]
-* est_veiling_light: <true: uses background sample to calculate average wideband veiling light | false: calculate wideband veiling light> <br><br>
-* background_sample: [\<x-coordinate\>, \<y-coordinate\>, \<width of region\>, \<height of region\>]
+* color_2_sample: [\<x-coordinate\>, \<y-coordinate\>, \<width of region\>, \<height of region\>] <br><br>
+
+* est_veiling_light: <true: uses background sample to calculate average wideband veiling light | false: calculate wideband veiling light>
+* background_sample: [\<x-coordinate\>, \<y-coordinate\>, \<width of region\>, \<height of region\>] <br><br>
 
 * show_image: \<true/false: shows raw and color corrected image\>
 * check_time: \<true/false: track and print to screen time latency at different points\>
