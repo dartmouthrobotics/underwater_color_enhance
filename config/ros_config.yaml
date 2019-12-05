@@ -10,19 +10,23 @@ water_type: "Jerlov IA"
 
 # Method
 method_id: 0
+
 optimize: false
+range: 0.5  # range in meters for what will be used in att. optimization over depth
+
 slam_input: false
+
 color_1_sample: [516, 591, 2, 2]  # x, y, width, height (white recommended)
 color_2_sample: [1341, 611, 2, 2] # x, y, width, height (black recommended)
-# true: average background sample; false: calculate
-est_veiling_light: false
+
+est_veiling_light: false  # true: average background sample; false: calculate
 background_sample: [650, 555, 2, 2]    # x, y, width, height (1 - one point sample)
 
 show_image: true
 check_time: false
 log_screen: false
 
-save_data: false
+save_data: true
 prior_data: false
 output_filename: "output.xml"
 input_filename: "input.xml"

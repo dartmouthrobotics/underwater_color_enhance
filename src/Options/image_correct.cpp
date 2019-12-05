@@ -37,8 +37,9 @@ int main(int argc, char* argv[])
   // Color enhancement method
   int METHOD_ID = config["method_id"].as<int>();
 
-  // TO DO: if optimized then we need to provide the current attenuation values
-  bool OPTIMIZE = config["optimize"].as<bool>();
+  // Optimized option is unnecessary in single image color correction
+  bool OPTIMIZE = false;
+  float RANGE = -1.0;
 
   // Color patch locations if using color chart
   std::vector<int> COLOR_1_SAMPLE = config["color_1_sample"].as<std::vector<int>>();
@@ -92,7 +93,7 @@ int main(int argc, char* argv[])
 
   // Initialize color correction method
   underwater_color_enhance::ColorCorrect correction_method(underwater_scene, METHOD_ID,
-    EST_VEILING_LIGHT, OPTIMIZE, SAVE_DATA, CHECK_TIME, LOG_SCREEN, PRIOR_DATA,
+    EST_VEILING_LIGHT, OPTIMIZE, RANGE, SAVE_DATA, CHECK_TIME, LOG_SCREEN, PRIOR_DATA,
     INPUT_FILENAME, OUTPUT_FILENAME);
 
   if (LOG_SCREEN)

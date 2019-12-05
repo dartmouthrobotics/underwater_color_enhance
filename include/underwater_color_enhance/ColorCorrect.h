@@ -43,7 +43,7 @@ public:
    */
   ColorCorrect() {}
   ColorCorrect(Scene& underwater_scene, int METHOD_ID, bool EST_VEILING_LIGHT, bool OPTIMIZE,
-    bool SAVE_DATA, bool CHECK_TIME, bool LOG_SCREEN, bool PRIOR_DATA, std::string INPUT_FILENAME,
+    float RANGE, bool SAVE_DATA, bool CHECK_TIME, bool LOG_SCREEN, bool PRIOR_DATA, std::string INPUT_FILENAME,
     std::string OUTPUT_FILENAME);
   ~ColorCorrect() {}
 

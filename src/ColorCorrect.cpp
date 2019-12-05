@@ -16,7 +16,7 @@ namespace underwater_color_enhance
 {
 
 ColorCorrect::ColorCorrect(Scene& underwater_scene, int METHOD_ID, bool EST_VEILING_LIGHT, bool OPTIMIZE,
-  bool SAVE_DATA, bool CHECK_TIME, bool LOG_SCREEN, bool PRIOR_DATA, std::string INPUT_FILENAME,
+  float RANGE, bool SAVE_DATA, bool CHECK_TIME, bool LOG_SCREEN, bool PRIOR_DATA, std::string INPUT_FILENAME,
   std::string OUTPUT_FILENAME)
 {
   this->underwater_scene = underwater_scene;
@@ -36,6 +36,7 @@ ColorCorrect::ColorCorrect(Scene& underwater_scene, int METHOD_ID, bool EST_VEIL
       // Is this required? will attenuation not be saved?
       this->method->SAVE_DATA = true;
       this->method->PRIOR_DATA = false;
+      this->method->RANGE = RANGE;
     }
     else
     {

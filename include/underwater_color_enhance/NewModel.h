@@ -56,9 +56,11 @@ private:
 
   std::map<float, std::vector<double>> att_map; /** Contains the mapping of depth to pre calculated att values */
 
-  float RANGE = 0.5;
-  float depth_max_range = 0.5;
+  float depth_max_range = -1;  /**< Current max depth until next optimization calculation occurs */
   dlib::matrix<double, 2, 1> observed_input;
+
+  /** Samples of the observed color patches in their BGR channels
+   */
   std::vector<std::pair<dlib::matrix<double, 2, 1>, double>> observed_samples_blue;
   std::vector<std::pair<dlib::matrix<double, 2, 1>, double>> observed_samples_green;
   std::vector<std::pair<dlib::matrix<double, 2, 1>, double>> observed_samples_red;

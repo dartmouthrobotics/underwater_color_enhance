@@ -48,8 +48,9 @@ int main(int argc, char* argv[])
   // Color enhancement method
   int METHOD_ID = config["method_id"].as<int>();
 
-  // TO DO: if optimized then we need to provide the current attenuation values
+  // Optimize attenuation values over depth in specified range
   bool OPTIMIZE = config["optimize"].as<bool>();
+  float RANGE = config["range"].as<float>();
 
   // Check if SLAM features will be used
   bool SLAM_INPUT = config["slam_input"].as<bool>();
@@ -114,7 +115,7 @@ int main(int argc, char* argv[])
 
   // Initialize color correction method
   underwater_color_enhance::ColorCorrect correction_method(underwater_scene, METHOD_ID,
-    EST_VEILING_LIGHT, OPTIMIZE, SAVE_DATA, CHECK_TIME, LOG_SCREEN, PRIOR_DATA, INPUT_FILENAME, OUTPUT_FILENAME);
+    EST_VEILING_LIGHT, OPTIMIZE, RANGE, SAVE_DATA, CHECK_TIME, LOG_SCREEN, PRIOR_DATA, INPUT_FILENAME, OUTPUT_FILENAME);
 
   if (LOG_SCREEN)
   {

@@ -112,7 +112,12 @@ void NewModel::calculate_optimized_attenuation(cv::Mat& img)
     cv::Scalar color_1_obs = mean(color_1_region);
     cv::Scalar color_2_obs = mean(color_2_region);
 
-    // calc_attenuation(color_1_obs, color_2_obs, wideband_veiling_light);
+    // Check if max depth range has been set
+    if (this->depth_max_range == -1)
+    {
+      this->depth_max_range = fabs((this->depth + 0.5) * 2);
+      this->depth_max_range = roundf(this->depth_max_range * 1) / 2;
+    }
 
     if (this->depth < this->depth_max_range && this->depth > this->depth_max_range - this->RANGE)
     {
@@ -284,7 +289,7 @@ cv::Mat NewModel::color_correct(cv::Mat& img)
     // Splice regions from the image
     cv::Mat color_1_region = img(patch_1_region);
     cv::Mat color_2_region = img(patch_2_region);
-
+// calc_attenuation(color_1_obs, color_2_obs, wideband_veiling_light);
     // TO DO: this mean is done independently for each channel. Should I take the average pixel color instead?
     // mean pixel value of observed colors
     cv::Scalar color_1_obs = mean(color_1_region);

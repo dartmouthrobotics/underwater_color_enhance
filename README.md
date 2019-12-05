@@ -134,7 +134,6 @@ source devel/setup.bash
 * water_type: \<define approximate type of water the image was taken in\> <br><br>
 
 * method: <0: A Revised Underwater Image Formation Model>
-* optimize: <true: optimize attenuation values in depth range | false: calculate attenuation values per image frame> (currently not implemented)
 * color_1_sample: [\<x-coordinate\>, \<y-coordinate\>, \<width of region\>, \<height of region\>]
 * color_2_sample: [\<x-coordinate\>, \<y-coordinate\>, \<width of region\>, \<height of region\>]
 * est_veiling_light: <true: uses background sample to calculate average wideband veiling light | false: calculate wideband veiling light> <br><br>
