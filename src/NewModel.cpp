@@ -225,10 +225,11 @@ cv::Mat NewModel::color_correct(cv::Mat& img)
   }
 
   // Split BGR image to a Mat array of each color channel
-  cv::Mat bgr[3];
-  split(img, bgr);
+  // cv::Mat bgr[3];
+  // split(img, bgr);
 
-  std::vector<cv::Mat> corrected_bgr(3);
+  // std::vector<cv::Mat> corrected_bgr(3);
+  cv::Mat corrected_img = img.clone();
 
   if (this->CHECK_TIME)
   {
@@ -321,9 +322,32 @@ cv::Mat NewModel::color_correct(cv::Mat& img)
   float red_direct_signal_val = exp(-1.0 * this->direct_signal_att[2] * this->scene->DISTANCE);
 
   // Implement color enhancement.
-  corrected_bgr[0] = (bgr[0] - (wideband_veiling_light[0] * blue_backscatter_val)) / blue_direct_signal_val;
-  corrected_bgr[1] = (bgr[1] - (wideband_veiling_light[1] * green_backscatter_val)) / green_direct_signal_val;
-  corrected_bgr[2] = (bgr[2] - (wideband_veiling_light[2] * red_backscatter_val)) / red_direct_signal_val;
+  // corrected_bgr[0] = (bgr[0] - (wideband_veiling_light[0] * blue_backscatter_val)) / blue_direct_signal_val;
+  // corrected_bgr[1] = (bgr[1] - (wideband_veiling_light[1] * green_backscatter_val)) / green_direct_signal_val;
+  // corrected_bgr[2] = (bgr[2] - (wideband_veiling_light[2] * red_backscatter_val)) / red_direct_signal_val;
+
+  for (int i = 0; i < img.rows; i++)
+  {
+    for (int j = 0; j < img.cols; j++)
+    {
+      float new_blue_val = (img.at<cv::Vec3b>(i,j)[0] - (wideband_veiling_light[0] * blue_backscatter_val)) / blue_direct_signal_val;
+      float new_green_val = (img.at<cv::Vec3b>(i,j)[1] - (wideband_veiling_light[1] * green_backscatter_val)) / green_direct_signal_val;
+      float new_red_val = (img.at<cv::Vec3b>(i,j)[2] - (wideband_veiling_light[2] * red_backscatter_val)) / red_direct_signal_val;
+
+      if (new_blue_val > 255) new_blue_val = 255;
+      else if (new_blue_val < 0) new_blue_val = 0;
+
+      if (new_green_val > 255) new_green_val = 255;
+      else if (new_green_val < 0) new_green_val = 0;
+
+      if (new_red_val > 255) new_red_val = 255;
+      else if (new_red_val < 0) new_red_val = 0;
+
+      corrected_img.at<cv::Vec3b>(i,j)[0] = new_blue_val;
+      corrected_img.at<cv::Vec3b>(i,j)[1] = new_green_val;
+      corrected_img.at<cv::Vec3b>(i,j)[2] = new_red_val;
+    }
+  }
 
   if (this->CHECK_TIME)
   {
@@ -339,8 +363,8 @@ cv::Mat NewModel::color_correct(cv::Mat& img)
   }
 
   // Merge the BGR channels into normal image format.
-  cv::Mat corrected_img;
-  merge(corrected_bgr, corrected_img);
+  // cv::Mat corrected_img;
+  // merge(corrected_bgr, corrected_img);
 
   if (this->CHECK_TIME)
   {

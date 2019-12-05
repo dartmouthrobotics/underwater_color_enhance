@@ -19,7 +19,7 @@ background_sample: [650, 555, 2, 2]  # x, y, width, height (1 - one point sample
 
 
 show_image: true
-check_time: false
+check_time: true
 log_screen: false
 
 save_data: false
