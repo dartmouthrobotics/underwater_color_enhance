@@ -150,7 +150,7 @@ source devel/setup.bash
 * input_filename: \<xml file to load attenuation values with its depth measurement\>
 
 <br><br>
-`config/ros_config.yaml`:
+`config/ros_config.yaml`: <br><br>
 Note: `optimize` option will not color correct any images. Instead it will go through and calculate optimized attenuation values,
 which can then be used later through the `prior` data option. <br><br>
 
