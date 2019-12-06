@@ -20,18 +20,20 @@
 
 int main(int argc, char* argv[])
 {
+  // ROOT_PATH environment variable, prefix for all files.
+  const char* ROOT_PATH = std::getenv("ROOT_PATH");
   // Load configuration file
   YAML::Node config = YAML::LoadFile(argv[1]);
 
   // Single image to color enhance
-  const std::string IMAGE_FILE = config["image"].as<std::string>();
+  const std::string IMAGE_FILE = std::string(ROOT_PATH) + "/" + config["image"].as<std::string>();
 
   // Scene properties: distance to object of interest in image and depth in water
   float DISTANCE = config["distance"].as<float>();
   double DEPTH = config["depth"].as<double>();
 
-  std::string CAMERA_RESPONSE_FILENAME = config["camera_response_filename"].as<std::string>();
-  std::string JERLOV_WATER_FILENAME = config["jerlov_water_filename"].as<std::string>();
+  std::string CAMERA_RESPONSE_FILENAME = std::string(ROOT_PATH) + "/" + config["camera_response_filename"].as<std::string>();
+  std::string JERLOV_WATER_FILENAME = std::string(ROOT_PATH) + "/" + config["jerlov_water_filename"].as<std::string>();
   std::string WATER_TYPE = config["water_type"].as<std::string>();
 
   // Color enhancement method
@@ -58,8 +60,8 @@ int main(int argc, char* argv[])
 
   bool SAVE_DATA = config["save_data"].as<bool>();
   bool PRIOR_DATA = config["prior_data"].as<bool>();
-  const std::string OUTPUT_FILENAME = config["output_filename"].as<std::string>();
-  const std::string INPUT_FILENAME = config["input_filename"].as<std::string>();
+  const std::string OUTPUT_FILENAME = std::string(ROOT_PATH) + "/" + config["output_filename"].as<std::string>();
+  const std::string INPUT_FILENAME = std::string(ROOT_PATH) + "/" + config["input_filename"].as<std::string>();
 
   if (LOG_SCREEN)
   {

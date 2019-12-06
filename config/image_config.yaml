@@ -1,11 +1,12 @@
 # Input image to be enhanced
-image: "/home/darobot/Research/color_correct/catkin_ws/src/underwater_color_enhance/Images/shipwreck_depth_000606.png"
+# All paths are with respect to $ROOT_PATH environment variable.
+image: "Images/shipwreck_depth_000606.png"
 
 # Scene properties
 distance: 0.33
 depth: 6.06
-camera_response_filename: "/home/darobot/Research/color_correct/catkin_ws/src/underwater_color_enhance/Camera_Response_Files/Sony_IMX322LQJ-C_Camera_Response.csv"
-jerlov_water_filename: "/home/darobot/Research/color_correct/catkin_ws/src/underwater_color_enhance/Jerlov_Water/Jerlov_Water_Types.csv"
+camera_response_filename: "Camera_Response_Files/Sony_IMX322LQJ-C_Camera_Response.csv"
+jerlov_water_filename: "Jerlov_Water/Jerlov_Water_Types.csv"
 water_type: "Jerlov IA"
 
 # Method
@@ -24,5 +25,5 @@ log_screen: false
 
 save_data: false
 prior_data: false
-output_filename: "/home/darobot/Research/color_correct/catkin_ws/src/underwater_color_enhance/output.xml"
-input_filename: "/home/darobot/Research/color_correct/catkin_ws/src/underwater_color_enhance/input.xml"
+output_filename: "output.xml"
+input_filename: "input.xml"

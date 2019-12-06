@@ -1,3 +1,4 @@
 <launch>
- <node pkg="underwater_color_enhance" type="secondProgram" name="image_color_correct" args="/home/darobot/Research/color_correct/catkin_ws/src/underwater_color_enhance/config/image_config.yaml" output="screen"/>
+ <env name="ROOT_PATH" value="$(find underwater_color_enhance)"/>
+ <node pkg="underwater_color_enhance" type="secondProgram" name="image_color_correct" args="$(find underwater_color_enhance)/config/image_config.yaml" output="screen"/>
 </launch>
