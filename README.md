@@ -123,8 +123,8 @@ source devel/setup.bash
 
 ## Configuration
 
-`config/image_config.yaml`:
-* image: \<path to singular input image\>  <br><br>
+`config/image_config.yaml` (note all paths are with respect to `$ROOT_PATH`, see `image_color_enhance.launch`):
+* image: \<path to single input image\>  <br><br>
 
 * distance: \<from the camera to the object of interest, in meters\>
 * depth: \<altitude depth; positive value, in meters\>
